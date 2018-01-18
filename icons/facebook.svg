@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 19" width="9" height="19">
+	<style>
+		.shp0 { fill: #d12755 } 
+	</style>
+	<path id="facebook" class="shp0" d="M5.54,9.61h2.46l0.33,-3.07h-2.79l0,-1.54c0,-0.8 0.08,-1.23 1.23,-1.23h1.54v-3.07h-2.46c-2.95,0 -3.99,1.49 -3.99,3.99v1.84h-1.84v3.07h1.84v8.91h3.69z" />
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 22" width="75" height="22">
+	<defs>
+		<image width="75" height="22" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAAWCAMAAAC/gJHxAAAAAXNSR0IB2cksfwAAADNQTFRFAAAA////////////////////////////////////////////////////////////////t5XiggAAABF0Uk5TAL//z69gEO9Q3yBAMICfcI+ZswJFAAABSklEQVR4nJXVVwKDIAwAUAzbgb3/aZuwGoZa84UiDyQMsUAJqbQRKYwFl0oS/CpYrBa2tpBipxbAw2ZhAzhSifowrE2tOeonmcJHAH/ECJI0PVoQHi2isEuApY5fYcNttPgAplamuCVEAFC95RFztxZRyojOMtiutxaN87jfWESF8jGbDsyq6S0arTeX1o/6x6K38spiVGfZyT/ir/v6fW85RrXWmZ86K3auZ5Zussytc7YmYrUbaqKloVnLWN5SHL6uy8GipnbtLaL8by7bPVSE0aJk0gC4RRtFt3Nfw4eyjSeWkXEdcyutO3wDZ/+P7DyYWHR2wKe10hLWdRu3a+LGEju14VbZDaEU/7doAPac7W2VE/PCEh+WH27RXA7nxIMllrlFhywl5pVFA5ifq0CJeWXls3i0YjLxcuCvSv/s7mir3cXdgbb8Ar6YDvYFh00rAAAAAElFTkSuQmCC"/>
+	</defs>
+	<use id="logotype-white-mobile.svg" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>

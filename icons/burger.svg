@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 24" width="50" height="24">
+	<defs>
+		<image width="50" height="24" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAYAgMAAADFZkZyAAAAAXNSR0IB2cksfwAAAAlQTFRFAAAA////////c3ilYwAAAAN0Uk5TAO//DpLEcAAAABxJREFUeJxjyFqFABMYkDirFqDxUFXSAgwDtwAAcz5lQZ3ergwAAAAASUVORK5CYII="/>
+	</defs>
+	<use id="open menu BTN copy" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>

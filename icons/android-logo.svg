@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 47" width="43" height="47">
+	<defs>
+		<image width="43" height="47" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAvCAMAAABNEsPkAAAAAXNSR0IB2cksfwAAADNQTFRFAAAApMY5pMY5pMY5pMY5pMY5pMY5pMY5pMY5pMY5pMY5pMY5pMY5pMY5pMY5pMY5pMY5YUT0UQAAABF0Uk5TACDfQJ+AEGCv7/+PcM+/UDC0ZzNSAAAA+klEQVR4nO2V25bFEAyGg6CpDn3/px2hdK8txqxe978o4UPqkABcUhp61RijuqXvahda/jq/0c6izTtusDii4PIELlSwitDl5ZzAwrEdn2Shc5uEAnyThZbRwH2IHfuxPDhIqOH+mP+xsQ4SF0ZgNXdo53RjE9jSNKJJcLaN+RZO2XGD45SNAztF913etn/KzPXMB2UPtWTVYTPks0FpwSY+bV8vjF6w5SwJmvkne5Uv+7JP2fJ+w4It4SuCQ6KwfBdBc4B9Eh9OKaKy6Bwf/YmV1rGqxkBCAe1u2MuyEwde9lMosFKGZdX00vb+LNaYWO6pyHfL071I0S98zi/NnnZWEwAAAABJRU5ErkJggg=="/>
+	</defs>
+	<use id="android-logo.svg" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>

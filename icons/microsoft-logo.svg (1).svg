@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 41" width="44" height="41">
+	<defs>
+		<image width="44" height="41" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAApBAMAAAC8Z9aBAAAAAXNSR0IB2cksfwAAABtQTFRFAAAA8FQjhMRB8FQjhMRBLavi+bwVLavi+bwVyJf86wAAAAl0Uk5TAP//gICAgP//2gXMeQAAADNJREFUeJxjEIQDASYlOGAYFR7MwsZwYMDiAgcMOEAoHASwpcEBQzkcFHB0wMGo8GAWBgBGufnZj/vUqAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<use id="microsoft-logo.svg" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>

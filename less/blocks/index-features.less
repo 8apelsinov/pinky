@@ -1,0 +1,19 @@
+.features {
+    .mobile-width();
+    
+    height: 1002px;
+    background-color: rgba(212,88,131,0.5);
+}
+@media (min-width: @tablet-width) {
+    .features {
+        .tablet-width();
+        height: 1060px;
+    }
+}
+@media (min-width: @desktop-width) {
+    .features {
+        .desktop-width();
+        
+        height: 1365px;
+    }
+}

@@ -1,0 +1,43 @@
+.photos__users-photos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+}
+@media (min-width: @tablet-width) {
+    .photos__users-photos {
+        width: 620px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .photos__users-photos {
+        width: 940px;
+    }
+}
+.photos__item {
+    width: 280px;
+    height: 325px;
+    background-color: deepskyblue;
+    margin-bottom: 20px;
+}
+@media (min-width: @tablet-width) {
+    .photos__item {
+        width: 300px;
+        height: 455px;
+        &:nth-child(2n+1) {
+            margin-right: 20px;
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .photos__item {
+        width: 300px;
+        height: 555px;
+        margin-bottom: 55px;
+        margin-right: 20px;
+         &:nth-child(3n) {
+            margin-right: 0px;
+        }
+    }
+}

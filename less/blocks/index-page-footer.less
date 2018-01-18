@@ -1,0 +1,23 @@
+.page-footer {
+    
+    background-color: rgba(212,223,95,.5);
+    height: 265px;
+}
+.page-footer--none {
+    display: none;
+}
+@media (min-width: @tablet-width) {
+    .page-footer {
+        .tablet-width();
+         padding: 0 20px;
+        display: block;
+        height: 125px;
+    }
+}
+@media (min-width: @desktop-width) {
+    .page-footer {
+        display: block;
+        .desktop-width();
+        height: 200px;
+    }
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 56" width="47" height="56">
+	<defs>
+		<image width="47" height="56" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAA4CAMAAABaKlG9AAAAAXNSR0IB2cksfwAAADNQTFRFAAAA////////////////////////////////////////////////////////////////t5XiggAAABF0Uk5TAGCv/0DvEL8w359Qz4+AIHAfUIH0AAABN0lEQVR4nNWVSRLDIAwEDWK3Dfz/tTFroJIKwzFztBsV0kjoOH6LcSKxYAZaEuG80pSlMNzIgkswui04OYznFacTws+GWyz81XisOqbhNxbe7yV76D288BYrTeElZwsmCO+jmNwPzDvn/Zcahbv5yVk9EmIvKvH5iLppkHTnE5nTJG3euLG0luz5MAngj+oBsyarchIKjP7cKKfA12DRlesm9nA4vC24QsNXwxiIt051IN/cvdZoUp9iMPy9yfs/5/Um3x91DfJtuOB2q3xEL1Qzhtu/3QiexnoAHsd6JXQAkizbeR6SNiYmiadndYMXOxY307YtQDNoTRrAEvWdgTXRsIqRlO2w2RDThn2E7Ix4TFq10cemnw9IbX/jw9ZL6zT7ePes/Cf+2ODSfx3fdVB5CUsX+pcXP7oYC4qJtNsAAAAASUVORK5CYII="/>
+	</defs>
+	<use id="apple-logo.svg" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>
