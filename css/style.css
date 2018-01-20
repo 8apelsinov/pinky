@@ -19,7 +19,7 @@ a {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: none;
+  border: 0;
   padding: 0;
   outline: none;
   white-space: nowrap;
@@ -42,31 +42,6 @@ a {
 .page-header__logo img {
   width: 75px;
   height: 22px;
-}
-.page-header__toggle {
-  position: absolute;
-  top: 21px;
-  right: 20px;
-  z-index: 2;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  display: block;
-  width: 50px;
-  height: 25px;
-  background-color: transparent;
-  background-image: url(../icons/burger.svg);
-  background-repeat: no-repeat;
-}
-.page-header__toggle:hover {
-  background-image: url(../icons/burger-hover.svg);
-  border: none;
-  outline: none;
-}
-.page-header__toggle:active {
-  background-image: url(../icons/burger-active.png);
-  border: none;
-  outline: none;
 }
 @media (min-width: 660px) {
   .page-header {
@@ -113,6 +88,53 @@ a {
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
+  position: relative;
+}
+.main-nav__toggle {
+  display: block;
+  width: 50px;
+  height: 25px;
+  position: absolute;
+  top: -50px;
+  right: 20px;
+  z-index: 2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  /*    background-color: transparent;
+      background-image: url(../icons/burger.svg);
+     background-repeat: no-repeat;  */
+  /*   &:hover {
+           background-image: url(../icons/burger-hover.svg);
+        border: none;
+        outline: none;
+           
+        }
+        &:active {
+            background-image: url(../icons/burger-active.png);
+            border: none;
+            outline: none;
+            
+        } */
+}
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0px;
+  width: 50px;
+  height: 4px;
+  background-color: white;
+  box-shadow: 0 10px 0 0 white, 0 -10px 0 0 white;
+}
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: #d12755;
+  box-shadow: 0 10px 0 0 #d12755, 0 -10px 0 0 #d12755;
+}
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: rgba(209, 39, 85, 0.3);
+  box-shadow: 0 10px 0 0 rgba(209, 39, 85, 0.3), 0 -10px 0 0 rgba(209, 39, 85, 0.3);
 }
 .site-list__item {
   text-align: center;
