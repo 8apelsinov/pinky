@@ -132,9 +132,6 @@ a {
   .main-nav--closed .site-list__item {
     display: none;
   }
-  .main-nav--closed .site-list__item--active {
-    display: block;
-  }
   .main-nav--closed .site-list__item {
     display: none;
   }
@@ -179,12 +176,20 @@ a {
 }
 @media (min-width: 660px) {
   .appstores {
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center 0px;
     width: 300px;
     height: 440px;
   }
 }
 @media (min-width: 1200px) {
   .appstores {
+    background-image: url(../img/bg-back-desktop@1x.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center 0px;
     width: 370px;
     height: 570px;
   }
