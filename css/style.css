@@ -33,7 +33,7 @@ a {
 }
 .page-header__logo {
   display: block;
-  background-color: #283645;
+  background-color: #000000;
   padding: 20px 0;
   box-sizing: border-box;
   border-bottom: 1px solid black;
@@ -42,6 +42,9 @@ a {
 .page-header__logo img {
   width: 75px;
   height: 22px;
+}
+.main-nav--opened .page-header__logo {
+  outline: 1px solid yellow;
 }
 @media (min-width: 660px) {
   .page-header {
@@ -136,6 +139,30 @@ a {
   background-color: rgba(209, 39, 85, 0.3);
   box-shadow: 0 10px 0 0 rgba(209, 39, 85, 0.3), 0 -10px 0 0 rgba(209, 39, 85, 0.3);
 }
+.main-nav--opened .main-nav__toggle::before,
+.main-nav--opened .main-nav__toggle::after {
+  position: absolute;
+  content: "";
+  top: 7px;
+  right: 0px;
+  width: 32px;
+  height: 5px;
+  background-color: white;
+}
+.main-nav--opened .main-nav__toggle::before {
+  transform: rotate(45deg);
+}
+.main-nav--opened .main-nav__toggle::after {
+  transform: rotate(-45deg);
+}
+.main-nav--opened .main-nav__toggle:hover::before,
+.main-nav--opened .main-nav__toggle:hover::after {
+  background-color: #d12755;
+}
+.main-nav--opened .main-nav__toggle:active::before,
+.main-nav--opened .main-nav__toggle:active::after {
+  background-color: #5e364f;
+}
 .site-list__item {
   text-align: center;
   padding: 20px 0;
@@ -195,6 +222,7 @@ a {
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center 0px;
+  margin-top: -75px;
 }
 @media (min-width: 660px) {
   .appstores {

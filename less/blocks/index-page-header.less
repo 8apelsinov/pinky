@@ -5,10 +5,10 @@
     
     position: relative;
     
-  
-    &__logo {
+  //по умолчанию: меню спрятано, фон полупрозрачный
+    &__logo {       
         display: block;
-        background-color: #283645;
+        background-color: rgba(0,0,0,1);
         padding: 20px 0;
         box-sizing: border-box;
         border-bottom: 1px solid black;
@@ -21,6 +21,12 @@
     }
  
 }
+// при открытом меню фон тёмно-серый
+.main-nav--opened .page-header__logo {
+    outline: 1px solid yellow;
+}
+
+
 @media (min-width: @tablet-width) {
     .page-header {
         .tablet-width();
