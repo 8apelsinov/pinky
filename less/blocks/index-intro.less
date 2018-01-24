@@ -1,0 +1,86 @@
+.intro {
+    .mobile-width();
+    
+    height: 737px;
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    margin-top: -75px; 
+    
+    &__wrapper {
+        outline: 1px solid yellow;
+        background-color: #1d2631;
+    }
+    
+    &__slogan {
+        display: none;
+    }
+    
+    &__btn {
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 700;
+        border: 3px solid white;
+        border-radius: 30px;
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+    }
+    
+    &__text {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: #8e9398;
+    }
+}
+@media (min-width: @tablet-width) {
+    .intro {
+        .tablet-width();
+        background-image: url(../img/bg-back-tablet@1x.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 0px;
+        
+        height: 730px;
+       // margin-top: -110px; не нужно
+        
+        &__wrapper {
+            width: 300px;
+            padding-left: 20px;
+        }
+        
+        &__slogan {
+            display: block;
+            font-size: 40px;
+            line-height: 50px;
+        }
+        
+        &__text {
+        font-size: 18px;
+        }
+    }
+}
+@media (min-width: @desktop-width) {
+    .intro {
+        width: 1200px;
+        padding: 0;
+         background-image: url(../img/bg-back-desktop@1x.jpg);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center 0px;
+        height: 853px;
+        margin-top: -115px;
+        
+        &__slogan {
+            display: block;
+            font-size: 50px;
+            line-height: 50px;
+        }
+        
+        &__text {
+        font-size: 18px;
+     }
+    }
+}
