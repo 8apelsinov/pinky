@@ -58,6 +58,8 @@ a {
     padding: 0;
   }
   .page-header__wrapper {
+    width: 940px;
+    padding: 0 130px;
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: space-between;
@@ -157,11 +159,11 @@ a {
 }
 @media (min-width: 1200px) {
   .main-nav {
+    width: 620px;
     text-transform: none;
     font-weight: 400;
     line-height: 18px;
     background-color: transparent;
-    margin-top: -110px;
   }
   .main-nav__list {
     display: flex;
@@ -197,18 +199,18 @@ a {
     background-repeat: no-repeat;
     background-position: center 0px;
     height: 730px;
-    margin-top: -110px;
   }
 }
 @media (min-width: 1200px) {
   .appstores {
+    width: 1200px;
+    padding: 0;
     background-image: url(../img/bg-back-desktop@1x.jpg);
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: center 0px;
-    width: 1200px;
     height: 853px;
-    margin-top: -110px;
+    margin-top: -115px;
   }
 }
 .features {
