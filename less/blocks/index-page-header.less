@@ -8,7 +8,7 @@
   //по умолчанию: меню спрятано, фон полупрозрачный
     &__logo {       
         display: block;
-        background-color: rgba(0,0,0,.5);
+        background-color: #283645;
         padding: 20px 0;
         box-sizing: border-box;
         border-bottom: 1px solid black;
@@ -22,32 +22,28 @@
 }
 // при открытом меню фон тёмно-серый
 .main-nav--opened .page-header__logo {
-    outline: 1px solid yellow;
+   
 }
 
 
 @media (min-width: @tablet-width) {
     .page-header {
-        .tablet-width();
-        height: 985px;
-        &__logo {
-            height: 110px;
+        .tablet-width();             
+         &__wrapper {
+            background-color: rgba(0,0,0,.3);
         }
-        
     }
+    
 }
 @media (min-width: @desktop-width) {
     .page-header {
         .desktop-width();
-        height: 850px;
-       
+           padding: 0;
         
         &__wrapper {
-            
+            background-color: rgba(0,0,0,.3);
             display: flex;
             justify-content: space-between;
-             background-color: rgba(0,0,0,.3);
-            align-items: center;
         }
         &__logo {
              background-color: transparent;
@@ -56,14 +52,3 @@
         }
     }
 }
-/*
-.mobile-width() {
-    
-    padding: 0 20px;
-}
-.tablet-width() {
-    width: 620px;
-}
-.desktop-width() {
-    width: 940px;
-*/
