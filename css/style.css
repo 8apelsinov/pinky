@@ -45,10 +45,9 @@ a {
 }
 @media (min-width: 660px) {
   .page-header {
-    width: 620px;
+    width: 660px;
   }
   .page-header__wrapper {
-    width: 620px;
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
@@ -153,7 +152,7 @@ a {
 }
 @media (min-width: 660px) {
   .main-nav {
-    width: 620px;
+    width: 660px;
   }
 }
 @media (min-width: 1200px) {
@@ -192,11 +191,11 @@ a {
 }
 @media (min-width: 660px) {
   .appstores {
+    width: 620px;
     background-image: url(../img/bg-back-tablet@1x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 0px;
-    width: 660px;
     height: 730px;
     margin-top: -110px;
   }
