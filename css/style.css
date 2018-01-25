@@ -230,9 +230,11 @@ a {
   color: #8e9398;
 }
 .appstores {
+  width: 224px;
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 .appstores__apple {
@@ -255,28 +257,49 @@ a {
   background-repeat: no-repeat;
   width: 44px;
   height: 41px;
-  outline: 1px solid yellowgreen;
 }
 @media (min-width: 660px) {
   .intro {
-    width: 620px;
+    width: 660px;
     background-image: url(../img/bg-back-tablet@1x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 0px;
     height: 730px;
+    align-items: flex-end;
+    justify-content: flex-start;
   }
   .intro__wrapper {
     width: 300px;
+    height: 500px;
     padding-left: 20px;
+    background-color: transparent;
+    padding: 0 20px;
+    padding-bottom: 65px;
+    outline: 1px solid yellowgreen;
   }
   .intro__slogan {
     display: block;
     font-size: 40px;
-    line-height: 50px;
+    line-height: 52px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+  .intro__btn {
+    margin-bottom: 35px;
   }
   .intro__text {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .appstores {
+    width: 240px;
+    margin-bottom: 40px;
+  }
+  .appstores__android {
+    opacity: 0.3;
   }
 }
 @media (min-width: 1200px) {

@@ -58,12 +58,14 @@
 }
 
 .appstores {
+        width: 224px;
         display: flex;
         justify-content: space-around;
         align-items: baseline;
-    
+        
+        margin: 0 auto;
         margin-bottom: 30px;
-       
+   
     &__apple {
         display: block;
         background-image: url(../icons/apple-logo.svg);
@@ -86,34 +88,56 @@
         background-repeat: no-repeat;
         width: 44px;
         height: 41px;
-        outline: 1px solid yellowgreen;
     }
 }
 
 @media (min-width: @tablet-width) {
     .intro {
-        .tablet-width();
+        width: 660px;
         background-image: url(../img/bg-back-tablet@1x.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center 0px;
         
         height: 730px;
-       // margin-top: -110px; не нужно
+               
+        align-items: flex-end;
+        justify-content: flex-start;
         
         &__wrapper {
             width: 300px;
+            height: 500px;
             padding-left: 20px;
+            background-color: transparent;
+            
+            padding: 0 20px;
+            padding-bottom: 65px;   
         }
         
         &__slogan {
             display: block;
             font-size: 40px;
-            line-height: 50px;
+            line-height: 52px;
+            font-weight: 300;
+            text-align: center;
+            
+            margin: 0;
+            padding-top: 40px;
+            padding-bottom: 25px;
+        }
+        &__btn {
+            margin-bottom: 35px;
         }
         
         &__text {
-        font-size: 18px;
+        font-size: 16px;
+        }
+    }
+    .appstores {
+        width: 240px;
+        margin-bottom: 40px;
+        &__android {
+            opacity: 0.3;
         }
     }
 }
