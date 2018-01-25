@@ -1,31 +1,51 @@
 .intro {
-    .mobile-width();
+    width: 320px;
     
     height: 737px;
     background-image: url(../img/bg-back-mobile@1x.jpg);
-    background-size:auto;
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: center 0px;
     margin-top: -75px; 
     
+    display: flex;
+    align-items: flex-end;
+    
     &__wrapper {
-        outline: 1px solid yellow;
+        width: 320px;
+        padding: 0 20px;
         background-color: #1d2631;
+        height: 210px;
+        padding-top: 30px;
+        padding-bottom: 35px;
     }
     
     &__slogan {
         display: none;
     }
-    
+
     &__btn {
+        display: block;
         font-size: 18px;
         line-height: 18px;
         font-weight: 700;
         border: 3px solid white;
         border-radius: 30px;
         box-sizing: border-box;
-        width: 100%;
+        
         text-align: center;
+       padding: 15px;
+         margin-bottom: 30px;
+        
+        &:hover {
+            color: @pink;
+            background-color: white;
+        }
+        
+        &:active {
+            color: @pink-active;
+            background-color: white;
+        }
     }
     
     &__text {
@@ -33,8 +53,43 @@
         line-height: 24px;
         text-align: center;
         color: #8e9398;
+        
     }
 }
+
+.appstores {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    
+        margin-bottom: 30px;
+       
+    &__apple {
+        display: block;
+        background-image: url(../icons/apple-logo.svg);
+        background-repeat: no-repeat;
+        width: 47px;
+        height: 56px;
+     
+    }
+    &__android {
+        display: block;
+        background-image: url(../icons/android-logo.svg);
+        background-repeat: no-repeat;
+        width: 43px;
+        height: 47px;
+       
+    }
+    &__windows {
+        display: block;
+        background-image: url(../icons/microsoft-logo.svg);
+        background-repeat: no-repeat;
+        width: 44px;
+        height: 41px;
+        outline: 1px solid yellowgreen;
+    }
+}
+
 @media (min-width: @tablet-width) {
     .intro {
         .tablet-width();
