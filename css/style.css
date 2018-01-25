@@ -276,7 +276,6 @@ a {
     background-color: transparent;
     padding: 0 20px;
     padding-bottom: 65px;
-    outline: 1px solid yellowgreen;
   }
   .intro__slogan {
     display: block;
@@ -313,13 +312,30 @@ a {
     height: 853px;
     margin-top: -115px;
   }
+  .intro__wrapper {
+    height: 600px;
+    padding-left: 130px;
+    padding-bottom: 80px;
+  }
   .intro__slogan {
     display: block;
     font-size: 50px;
-    line-height: 50px;
+    line-height: 70px;
+  }
+  .intro__btn {
+    font-size: 21px;
+    margin-bottom: 65px;
   }
   .intro__text {
+    width: 310px;
     font-size: 18px;
+    line-height: 24px;
+  }
+  .appstores {
+    margin-bottom: 60px;
+  }
+  .appstores__android {
+    opacity: 1;
   }
 }
 .features {
