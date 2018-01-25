@@ -1,13 +1,47 @@
 .features {
-    .mobile-width();
+    outline: 1px dashed rgba(212,88,131,0.5);
     
-    height: 1002px;
-    background-color: rgba(212,88,131,0.5);
+    text-align: center;
+    
+    .mobile-width();
+    color: black;
+    
+    &__text {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 300;
+        
+        outline: 1px dashed green;
+    }
+    &__title {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        
+    }
+    &__item {
+        font-size: 14px;
+        line-height: 24px;
+        color: #283645;
+    }
 }
 @media (min-width: @tablet-width) {
     .features {
         .tablet-width();
-        height: 1060px;
+        margin-top: 57px;
+        
+        &__text {
+            display: block;
+            font-size: 40px;
+            line-height: 45px;
+            margin: 0;
+            margin-bottom: 15px;
+            &--diff {
+                display: block;
+                width: 335px;
+                margin: 0 auto;
+            }
+        }
     }
 }
 @media (min-width: @desktop-width) {
@@ -16,4 +50,4 @@
         
         height: 1365px;
     }
-}
+} 
