@@ -48,6 +48,7 @@ a {
     width: 660px;
   }
   .page-header__wrapper {
+    outline: 1px solid white;
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
@@ -386,7 +387,7 @@ a {
 }
 @media (min-width: 660px) {
   .features {
-    width: 620px;
+    width: 660px;
     margin-top: 57px;
   }
   .features__text {
@@ -400,13 +401,60 @@ a {
     display: block;
     width: 335px;
     margin: 0 auto;
+    margin-bottom: 110px;
+  }
+  .features__wrapper {
+    height: 500px;
+    /*         background-image: url("../img/iphone-screen-3-tablet@1x.png");
+            background-repeat: no-repeat;
+            background-position: left 20px bottom;
+    */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+  .features__block {
+    width: 310px;
+    text-align: left;
+    outline: 1px solid yellowgreen;
   }
 }
 @media (min-width: 1200px) {
   .features {
-    width: 940px;
-    padding: 0 130px;
-    height: 1365px;
+    width: 1200px;
+  }
+  .features__text {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .features__text--diff {
+    width: 430px;
+    margin-bottom: 240px;
+  }
+  .features__wrapper {
+    width: 1200px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-image: none;
+  }
+  .features__wrapper::before {
+    top: -190px;
+  }
+  .features__block {
+    width: 240px;
+    text-align: center;
+  }
+  .features__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .features__item {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 .reviews {
