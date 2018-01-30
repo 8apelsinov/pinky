@@ -114,7 +114,7 @@
                             <span class="rate-plan__text">1,99 usd</span>
                         </th>
                         <th class="rate-plan__header">
-                            <b class="rate-plan__title">Стандарт</b><br>
+                            <b class="rate-plan__title rate-plan__title--hit">Стандарт</b><br>
                             <span class="rate-plan__text">3,99 usd</span>
                         </th>
                         <th class="rate-plan__header">
@@ -122,9 +122,9 @@
                             <span class="rate-plan__text">9,99 usd</span>
                         </th>
                     </tr>
-                    <tr class="rate-plan__first-line">
+                    <tr>
                         <td class="rate-plan__set rate-plan__cell">
-                            <span class="rate-plan__name">Розовый фильтр</span>
+                            <span class="rate-plan__name rate-plan__name--first-line">Розовый фильтр</span>
                         </td>
                         <td class="rate-plan__base rate-plan__cell rate-plan__cell--yes">
                             <span class="rate-plan__name">Розовый фильтр</span>
@@ -138,7 +138,7 @@
                     </tr>
                     <tr>
                          <td class="rate-plan__set rate-plan__cell">
-                            <span class="rate-plan__name">Смайлики</span>
+                            <span class="rate-plan__name rate-plan__name--first-line">Смайлики</span>
                         </td>
                         <td class="rate-plan__base rate-plan__cell rate-plan__cell--no">
                             <span class="rate-plan__name">Смайлики</span>
@@ -152,7 +152,7 @@
                     </tr>
                     <tr>
                          <td class="rate-plan__set rate-plan__cell">
-                            <span class="rate-plan__name">Комментарии</span>
+                            <span class="rate-plan__name rate-plan__name--first-line">Комментарии</span>
                         </td>
                         <td class="rate-plan__base rate-plan__cell rate-plan__cell--no">
                             <span class="rate-plan__name">Комментарии</span>
@@ -172,12 +172,43 @@
                 </div>
             </section>
             
-            <section class="contacts">contacts
+            <section class="contacts">
+                <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+                <div class="contacts__wrapper">
+                    <div class="contacts__item">
+                        <span class="contacts__text">Звоните:</span><br>
+                        <tel class="contacts__info">+7 (812) 555-66-66</tel>
+                    </div>
+                    <div class="contacts__item">
+                        <span class="contacts__text">Пишите:</span><br>
+                        <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                    </div>
+                    <div class="contacts__item">
+                        <span class="contacts__text">Приезжайте в       гости:</span><br>
+                        <span class="contacts__info">ул.        Большая Конюшенная, 19/8</span>
+                    </div>
+                </div>
+                <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.599104365163!2d30.320894616314373!3d59.938794181876176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sru!4v1517343435929" width="320" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                
+                
             </section>
         </main>
         
-        <footer class="page-footer page-footer--none">page-footer
-            
+        <footer class="footer footer--none">
+            <div class="footer__wrapper">
+                <a class="footer__logo"><img src="http://via.placeholder.com/150x40"></a>
+                
+                <div class="footer__social social">
+                    <h2 class="visually-hidden">Ищите нас в соц.сетях:</h2>
+                    <a class="social__item social__twitter" href="#"><span class="visually-hidden">Twitter</span></a>
+                    <a class="social__item social__fb" href="#"><span class="visually-hidden">facebook</span></a>
+                    <a class="social__item social__youtube" href="#"><span class="visually-hidden">youtube</span></a>
+                </div>
+                <div class="footer__copyrights copyrights">
+                    <span class="copyrights__text">Разработано</span>
+                    <a class="copyrights__link" href="#"></a>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
