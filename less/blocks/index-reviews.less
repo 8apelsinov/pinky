@@ -1,18 +1,90 @@
 .reviews {
     .mobile-width();
     
-    height: 445px;
-    background-color: rgba(185,114,233,.5);
+    &__author {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 700;
+        color: black;
+        font-style: normal;
+        text-align: center;
+    }
+    &__author-info {
+        display: none;
+    }
+    &__blockquote {
+        padding: 0;
+        width: 280px;
+        color: #283645;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center; 
+        margin-bottom: 40px;
+    }
 }
+
+.control {
+    
+    display: flex;
+    justify-content: center;
+    height: 12px;
+    align-items: center;
+    &__item {
+        content: "";
+        width: 6px;
+        height: 6px;
+        background-color: #bec2c7;
+        border-radius: 50%;
+        margin-right: 16px;
+        
+        
+        &--active {
+            background-color: white;
+            border: 3px solid #273545;
+        }
+    }
+}
+
 @media (min-width: @tablet-width) {
     .reviews {
         .tablet-width();
-        height: 440px;
+        &__item {
+            display: flex;
+            flex-direction: column;
+        }
+        &__blockquote {
+            order: -1;
+            width: 620px;
+            font-size: 18px;
+        }
+        
+        &__author {
+            font-size: 20px;
+        }
+            
+        &__author-info {
+            display: block;
+            font-size: 14px;
+            line-height: 30px;
+            color: #283645;
+            text-align: center;
+        }
     }
 }
 @media (min-width: @desktop-width) {
     .reviews {
         .desktop-width();
-        height: 565px;
+        
+        &__item {
+            width: 960px;
+            outline: 1px dashed pink;
+        }
+        &__blockquote {
+            order: -1;
+            width: 715px;
+            font-size: 18px;
+            margin: 0 auto;
+            outline: 1px solid black;
+        }
     }
 }

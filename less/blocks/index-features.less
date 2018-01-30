@@ -30,9 +30,7 @@
             top: -75px;
             right: 0px;
             transform-origin: right bottom;
-            transform: skewY(-5deg);
-            
-            
+            transform: skewY(-5deg);   
         }
     }
     
@@ -53,6 +51,10 @@
         font-size: 14px;
         line-height: 24px;
         color: #283645;
+    }
+    
+    &__effect {
+        display: none;
     }
 }
 @media (min-width: @tablet-width) {
@@ -92,6 +94,16 @@
             
             outline: 1px solid yellowgreen;
         }
+        
+        &__effect {
+        display: block;
+        background-color: white;
+        
+        }
+        &__title--big {
+            font-size: 30px;
+            line-height: 36px;
+        }
     }
 }
 @media (min-width: @desktop-width) {
@@ -109,10 +121,12 @@
         
         &__wrapper {
             width: 1200px;
-            padding: 0;
+            padding: 0 160px;       //идеально по ширине по ПП
+            box-sizing: border-box;
+            
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             
             background-image: none;

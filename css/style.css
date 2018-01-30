@@ -385,6 +385,9 @@ a {
   line-height: 24px;
   color: #283645;
 }
+.features__effect {
+  display: none;
+}
 @media (min-width: 660px) {
   .features {
     width: 660px;
@@ -419,6 +422,14 @@ a {
     text-align: left;
     outline: 1px solid yellowgreen;
   }
+  .features__effect {
+    display: block;
+    background-color: white;
+  }
+  .features__title--big {
+    font-size: 30px;
+    line-height: 36px;
+  }
 }
 @media (min-width: 1200px) {
   .features {
@@ -434,10 +445,11 @@ a {
   }
   .features__wrapper {
     width: 1200px;
-    padding: 0;
+    padding: 0 160px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-image: none;
   }
@@ -460,39 +472,217 @@ a {
 .reviews {
   width: 280px;
   padding: 0 20px;
-  height: 445px;
-  background-color: rgba(185, 114, 233, 0.5);
+}
+.reviews__author {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: black;
+  font-style: normal;
+  text-align: center;
+}
+.reviews__author-info {
+  display: none;
+}
+.reviews__blockquote {
+  padding: 0;
+  width: 280px;
+  color: #283645;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.control {
+  display: flex;
+  justify-content: center;
+  height: 12px;
+  align-items: center;
+}
+.control__item {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+.control__item--active {
+  background-color: white;
+  border: 3px solid #273545;
 }
 @media (min-width: 660px) {
   .reviews {
     width: 620px;
-    height: 440px;
+  }
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+  .reviews__blockquote {
+    order: -1;
+    width: 620px;
+    font-size: 18px;
+  }
+  .reviews__author {
+    font-size: 20px;
+  }
+  .reviews__author-info {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    color: #283645;
+    text-align: center;
   }
 }
 @media (min-width: 1200px) {
   .reviews {
     width: 940px;
     padding: 0 130px;
-    height: 565px;
+  }
+  .reviews__item {
+    width: 960px;
+    outline: 1px dashed pink;
+  }
+  .reviews__blockquote {
+    order: -1;
+    width: 715px;
+    font-size: 18px;
+    margin: 0 auto;
+    outline: 1px solid black;
   }
 }
 .rate-plan {
   width: 280px;
   padding: 0 20px;
-  height: 380px;
-  background-color: rgba(152, 202, 73, 0.5);
+  background-color: #f2f2f2;
+}
+.rate-plan__list {
+  width: 1120px;
+  border-collapse: collapse;
+  text-transform: uppercase;
+  line-height: 30px;
+  overflow: hidden;
+}
+.rate-plan__header {
+  width: 280px;
+  background-color: #273545;
+  border-right: 2px solid #e5e5e5;
+  overflow: hidden;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.rate-plan__header:first-child {
+  background-color: #f2f2f2;
+}
+.rate-plan__header:last-child {
+  border-right: none;
+}
+.rate-plan__text {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+}
+.rate-plan__cell {
+  width: 280px;
+  height: 60px;
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+  border-top: none;
+  border-radius: 3px;
+  background-color: white;
+  font-size: 14px;
+  padding-left: 22px;
+}
+.rate-plan__cell--yes {
+  position: relative;
+}
+.rate-plan__cell--yes::before {
+  position: absolute;
+  content: "";
+  top: 33px;
+  right: 38px;
+  width: 3px;
+  height: 14px;
+  transform: rotate(-45deg);
+  background-color: #3dc643;
+  border-radius: 3px;
+}
+.rate-plan__cell--yes::after {
+  position: absolute;
+  content: "";
+  top: 20px;
+  right: 24px;
+  width: 3px;
+  height: 29px;
+  transform: rotate(45deg);
+  background-color: #3dc643;
+  border-radius: 3px;
+}
+.rate-plan__first-line {
+  border-top: none;
+}
+.rate-plan__title {
+  color: white;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.rate-plan__name {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+}
+.rate-plan__controls {
+  height: 100px;
+  margin: 0 auto;
 }
 @media (min-width: 660px) {
   .rate-plan {
     width: 620px;
-    height: 290px;
+    padding-bottom: 55px;
+  }
+  .rate-plan__list {
+    width: 100%;
+  }
+  .rate-plan__header {
+    width: 150px;
+    height: 80px;
+    font-size: 16px;
+  }
+  .rate-plan__text {
+    font-size: 18px;
+  }
+  .rate-plan__cell {
+    width: 152px;
+    border-collapse: collapse;
+  }
+  .rate-plan__controls {
+    display: none;
   }
 }
 @media (min-width: 1200px) {
   .rate-plan {
     width: 940px;
     padding: 0 130px;
-    height: 380px;
+    padding-bottom: 130px;
+  }
+  .rate-plan__list {
+    width: 100%;
+    height: 280px;
+    outline: 1px solid green;
+  }
+  .rate-plan__header {
+    width: 232px;
+    height: 98px;
+    font-size: 18px;
+  }
+  .rate-plan__text {
+    font-size: 24px;
   }
 }
 .contacts {
