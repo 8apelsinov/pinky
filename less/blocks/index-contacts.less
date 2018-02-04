@@ -2,19 +2,20 @@
      width: 280px;
     color: black;
     
-    
     &__title {
         font-size: 24px;
         line-height: 30px;
         font-weight: 300;
         text-align: center;
-         padding: 0 20px;
+        outline: 1px dashed yellowgreen;
     }
     
     &__wrapper {
         display: flex;
         flex-direction: column;
-         padding: 0 20px;
+   //      padding: 0 20px;
+        
+        outline: 1px dashed yellowgreen;
     }
     &__item {
         text-align: center;
@@ -40,7 +41,7 @@
 @media (min-width: @tablet-width) {
     .contacts {
         .tablet-width();
-        padding: 0 20px;
+        
          margin-bottom: 35px;
 
         
@@ -49,7 +50,7 @@
             width: 400px;
             font-size: 40px;
             line-height: 45px;
-            
+            padding: 0 20px;
              margin: 55px auto;
         }
         &__wrapper {
@@ -78,7 +79,7 @@
             padding: 0 130px;
             font-size: 50px;
             line-height: 60px;  
-             margin: 0px auto;
+             margin: 70px auto;
         }
         &__wrapper {
             flex-wrap: nowrap;

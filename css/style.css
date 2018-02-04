@@ -27,6 +27,15 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.container {
+  width: 100%;
+  padding: 0 20px;
+}
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 130px;
+  }
+}
 .page-header {
   width: 320px;
   position: relative;
@@ -48,8 +57,16 @@ a {
     width: 660px;
   }
   .page-header__wrapper {
-    outline: 1px solid white;
+    outline: 1px solid red;
     background-color: rgba(0, 0, 0, 0.3);
+  }
+  .page-header__logo {
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
+  .page-header__logo img {
+    width: 147px;
+    height: 40px;
   }
 }
 @media (min-width: 1200px) {
@@ -68,7 +85,6 @@ a {
   .page-header__logo {
     background-color: transparent;
     border: none;
-    margin-bottom: 40px;
   }
 }
 .main-nav {
@@ -157,6 +173,9 @@ a {
   .main-nav {
     width: 660px;
   }
+  .main-nav__toggle {
+    top: -75px;
+  }
 }
 @media (min-width: 1200px) {
   .main-nav {
@@ -171,6 +190,8 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    outline: 1px dashed green;
+    padding-top: 24px;
   }
   .main-nav__item {
     border: none;
@@ -184,25 +205,33 @@ a {
 }
 .intro {
   width: 320px;
-  height: 737px;
-  background: url("../img/iphone-hand-mobile@1x.png") left 180px no-repeat, url("../img/bg-back-mobile@1x.jpg") center 0px no-repeat;
+  height: 237px;
+  background: url("../img/bg-back-mobile@1x.jpg") center 0px no-repeat;
   margin-top: -75px;
   display: flex;
   align-items: flex-end;
 }
+.intro__main-page {
+  height: 737px;
+  background: url("../img/iphone-hand-mobile@1x.png") left 180px no-repeat, url("../img/bg-back-mobile@1x.jpg") center 0px no-repeat;
+}
 .intro__wrapper {
-  width: 320px;
   padding: 0 20px;
+}
+.intro__wrapper--main-page {
+  width: 320px;
   background-color: #1d2631;
   height: 210px;
   padding-top: 30px;
   padding-bottom: 35px;
-  /*       background-image: url(img/iphone-hand-mobile@1x.png);
-        background-repeat: no-repeat;
-        background-size: auto;
-        background-position: left top;*/
 }
 .intro__slogan {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.intro__slogan--main-page {
   display: none;
 }
 .intro__btn {
@@ -263,13 +292,22 @@ a {
 @media (min-width: 660px) {
   .intro {
     width: 660px;
-    background: url("../img/iphone-hand-tablet@1x.png") center 190px no-repeat, url("../img/bg-back-tablet@1x.jpg") center 0px no-repeat;
+    height: 440px;
+    background: url("../img/bg-back-tablet@1x.jpg") center 0px no-repeat;
     background-size: auto, cover;
-    height: 730px;
     align-items: flex-end;
     justify-content: flex-start;
+    margin-top: -118px;
+  }
+  .intro__main-page {
+    height: 730px;
+    background: url("../img/iphone-hand-tablet@1x.png") center 190px no-repeat, url("../img/bg-back-tablet@1x.jpg") center 0px no-repeat;
   }
   .intro__wrapper {
+    width: 100%;
+    text-align: center;
+  }
+  .intro__wrapper--main-page {
     width: 300px;
     height: 500px;
     padding-left: 20px;
@@ -279,10 +317,15 @@ a {
   }
   .intro__slogan {
     display: block;
+    font-size: 50px;
+    line-height: 70px;
+    text-align: center;
+    margin-bottom: 58px;
+  }
+  .intro__slogan--main-page {
     font-size: 40px;
     line-height: 52px;
     font-weight: 300;
-    text-align: center;
     margin: 0;
     padding-top: 40px;
     padding-bottom: 25px;
@@ -304,19 +347,20 @@ a {
 @media (min-width: 1200px) {
   .intro {
     width: 1200px;
+    height: 420px;
     padding: 0;
-    /*     background-image: url(../img/bg-back-desktop@1x.jpg);
-        background-size: auto;
-        background-repeat: no-repeat;
-        background-position: center 0px; */
-    background: url("../img/iphone-hand-desktop@1x.png") 145px 210px no-repeat, url("../img/bg-back-desktop@1x.jpg") center 0px no-repeat;
+    background: url("../img/bg-back-desktop@1x.jpg") center 0px no-repeat;
     background-size: auto, cover;
+  }
+  .intro__main-page {
     height: 853px;
-    margin-top: -115px;
+    background: url("../img/iphone-hand-desktop@1x.png") 145px 210px no-repeat, url("../img/bg-back-desktop@1x.jpg") center 0px no-repeat;
   }
   .intro__wrapper {
+    padding: 0 130px;
+  }
+  .intro__wrapper--main-page {
     height: 600px;
-    padding-left: 130px;
     padding-bottom: 80px;
   }
   .intro__slogan {
@@ -766,12 +810,12 @@ a {
   line-height: 30px;
   font-weight: 300;
   text-align: center;
-  padding: 0 20px;
+  outline: 1px dashed yellowgreen;
 }
 .contacts__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  outline: 1px dashed yellowgreen;
 }
 .contacts__item {
   text-align: center;
@@ -791,7 +835,6 @@ a {
 @media (min-width: 660px) {
   .contacts {
     width: 620px;
-    padding: 0 20px;
     margin-bottom: 35px;
   }
   .contacts__title {
@@ -799,6 +842,7 @@ a {
     width: 400px;
     font-size: 40px;
     line-height: 45px;
+    padding: 0 20px;
     margin: 55px auto;
   }
   .contacts__wrapper {
@@ -825,7 +869,7 @@ a {
     padding: 0 130px;
     font-size: 50px;
     line-height: 60px;
-    margin: 0px auto;
+    margin: 70px auto;
   }
   .contacts__wrapper {
     flex-wrap: nowrap;
