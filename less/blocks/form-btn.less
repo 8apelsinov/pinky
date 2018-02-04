@@ -1,9 +1,18 @@
+.form__footer {
+    display: flex;
+    flex-direction: column;
+}
+
 .form__btn {
     height: 90px;
     
     background-color: coral;
 }
 @media (min-width: @tablet-width) {
+    .form__footer {
+        flex-direction: row;
+        justify-content: center;
+    }
     .form__btn {
         
     }
@@ -11,6 +20,6 @@
 
 @media (min-width: @desktop-width) {
     .form__btn {
-        
+       
     }
 }

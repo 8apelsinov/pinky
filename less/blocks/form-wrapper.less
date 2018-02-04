@@ -1,16 +1,17 @@
 .form__wrapper {
-    .mobile-width();
-    
+    width: 320px;
+    outline: 1px solid darkblue;
 }
 
 @media (min-width: @tablet-width) {
     .form__wrapper {
-        .tablet-width();
+        width: 660px;
     }
 }
 
 @media (min-width: @desktop-width) {
     .form__wrapper {
-        .desktop-width();
+        width: 1200px;
+       // padding: 0 130px;
     }
 }

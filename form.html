@@ -71,13 +71,32 @@
                     <p class="os__text">С каким приложением путешествовали?</p>
                     <fieldset class="os__fieldset">
                         <legend class="os__legend">С каким приложением путешествовали?</legend>
-                            <input type="radio" name="os" value="ios" checked>Pink для iOS<br>
-                            <input type="radio" name="os" value="android">Pink на Android<br>
-                            <input type="radio" name="os" value="windows">Windows Phone
+                            <input class="os__input" type="radio" name="os" value="ios" id="ios" checked>
+                            <label class="os__label" for="ios">Pink для iOS</label><br>
+                        
+                            <input class="os__input" type="radio" name="os" value="android" id="android">
+                            <label for="android">Pink на Android</label><br>
+                        
+                            <input class="os__input" type="radio" name="os" value="windows" id="windows">
+                            <label for="windows">Windows Phone</label>
+                        
                     </fieldset>
                 </section>
             
-                <section class="form__user-contacts">form__user-contacts
+                <section class="form__user-contacts user-contacts">
+                  <fieldset class="user-contacts__fieldset">
+                    <legend class="user-contacts__legend">Контактная информация</legend>
+                      
+                    <div class="user-contacts__wrapper"> 
+                      <label for="phone" class="user-contacts__label">Номер телефона</label><br>
+                      <input type="tel" name="phone" placeholder="Номер, пожалуйста">
+                    </div><br>
+                    
+                    <div class="user-contacts__wrapper">
+                        <label for="email" class="user-contacts__label">Адрес почты</label><br>
+                        <input type="text" name="email" placeholder="Введите почту *" requied>
+                    </div>
+                  </fieldset>
                 </section>
             
                 <section class="form__user-achievements">form__user-achievements
@@ -86,8 +105,10 @@
                 <section class="form__emotions">form__emotions
                 </section>
               </div>
-              <div class="form__btn">btn</div>
-              <div class="form__requied">form-requied</div>
+                <div class="form__footer">
+                    <div class="form__btn">btn</div>
+                    <div class="form__requied">form-requied</div>
+                </div>
               </form>
           </div>
         </main>
