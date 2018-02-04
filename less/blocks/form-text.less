@@ -1,17 +1,38 @@
 .form__text {
-    height: 175px;
+   font-size: 14px;
+    line-height: 30px;
+    color: #283645;
+    text-align: center;
+    padding-top: 25px;
     
-background-color: rgba(118,27,174,.5);
+//background-color: rgba(118,27,174,.5);
+    &--hidden {
+        display: none;
+    }
 }
 
 @media (min-width: @tablet-width) {
     .form__text {
-        height: 250px;
+        width: 530px;
+       font-size: 18px;
+     //   outline: 1px dashed pink;
+        margin: auto;
+        padding-top: 100px;
+        padding-bottom: 85px;
+     &--hidden {   
+        display: block;
+       //  outline: 1px dashed yellowgreen;
+     }
     }
 }
 
 @media (min-width: @desktop-width) {
     .form__text {
-        height: 225px;
+        width: 805px;
+        padding-bottom: 70px;
+        &--hidden {   
+        display: inline;
+       //  outline: 1px dashed yellowgreen;
+     }
     }
 }

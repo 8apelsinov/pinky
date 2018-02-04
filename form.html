@@ -49,12 +49,32 @@
         
         <main class="main-page__form form">
           <div class="form__wrapper">
-            <div class="form__text">some-text</div>
+            <form action="" method="post">
+            <p class="form__text">
+               Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! 
+                <span class="form__text--hidden">Пожалуйста, заполните форму ниже:</span>
+            </p>
               <div class="form__general-form">
-                <section class="form__user-info">form__user-info
+                 
+                <section class="form__user-info user-info">
+                  <label class="user-info__label" for="last-name">Фамилия:</label>
+                  <input class="user-info__input" type="text" name="last-name" placeholder="Укажите фамилию *" required><br>
+                    
+                  <label class="user-info__label" for="name">Имя:</label>
+                  <input class="user-info__input" type="text" name="name" placeholder="Введите ваше имя *" required><br>
+                    
+                  <label class="user-info__label" for="patronymic">Отчество:</label>
+                  <input class="user-info__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
                 </section>
             
-                <section class="form__os">form__os
+                <section class="form__os os">
+                    <p class="os__text">С каким приложением путешествовали?</p>
+                    <fieldset class="os__fieldset">
+                        <legend class="os__legend">С каким приложением путешествовали?</legend>
+                            <input type="radio" name="os" value="ios" checked>Pink для iOS<br>
+                            <input type="radio" name="os" value="android">Pink на Android<br>
+                            <input type="radio" name="os" value="windows">Windows Phone
+                    </fieldset>
                 </section>
             
                 <section class="form__user-contacts">form__user-contacts
@@ -68,6 +88,7 @@
               </div>
               <div class="form__btn">btn</div>
               <div class="form__requied">form-requied</div>
+              </form>
           </div>
         </main>
         

@@ -1,22 +1,56 @@
 .form__os {
    width: 280px;
-    order: 2;
+   order: 2;
+    background-color: #f2f2f2;
+    padding-top: 40px;
+    color: black;
     
-    height: 340px;    
-    background-color: deeppink;
+ // outline: 1px solid deeppink;
+}
+
+.os {
+    
+    &__fieldset {
+        border: none;
+    }
+    &__legend {
+        display: none;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: @pink;
+        text-transform: uppercase;
+    }
+    & input {
+       margin-right: 30px;
+       margin-bottom: 55px;
+    }
+    
 }
 @media (min-width: @tablet-width) {
     .form__os {
         width: 620px;
-        height: 335px;
+        
         order: 0;
+    }
+    .os {
+        &__fieldset {
+            border-color: #e5e5e5;
+        }
+        &__legend {
+            display: block;
+        
+            color: @pink;
+      }
     }
 }
 
 @media (min-width: @desktop-width) {
     .form__os {
          width: 450px;
-        height: 335px;
+        
         order: 0;
     }
 }
