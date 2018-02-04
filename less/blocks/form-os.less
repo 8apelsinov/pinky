@@ -4,8 +4,6 @@
     background-color: #f2f2f2;
     padding-top: 40px;
     color: black;
-    
- // outline: 1px solid deeppink;
 }
 
 .os {
@@ -32,17 +30,28 @@
 @media (min-width: @tablet-width) {
     .form__os {
         width: 620px;
-        
+        background-color: white;
         order: 0;
+        padding-top: 10px;
     }
     .os {
+        &__text {
+            display: none;
+        }
         &__fieldset {
-            border-color: #e5e5e5;
+            
+            border: 2px solid #e5e5e5;
         }
         &__legend {
             display: block;
-        
             color: @pink;
+            text-align: center;
+            padding: 0 25px;
+            font-size: 14px;
+        line-height: 30px;
+        text-align: center;
+        color: @pink;
+        text-transform: uppercase;
       }
     }
 }
@@ -50,7 +59,12 @@
 @media (min-width: @desktop-width) {
     .form__os {
          width: 450px;
-        
+        padding-top: 0px;
         order: 0;
+    }
+    .os {
+        & input {
+           margin-left: 75px;
+        }
     }
 }

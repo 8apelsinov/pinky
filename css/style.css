@@ -1104,20 +1104,34 @@ a {
 @media (min-width: 660px) {
   .form__os {
     width: 620px;
+    background-color: white;
     order: 0;
+    padding-top: 10px;
+  }
+  .os__text {
+    display: none;
   }
   .os__fieldset {
-    border-color: #e5e5e5;
+    border: 2px solid #e5e5e5;
   }
   .os__legend {
     display: block;
+    padding: 0 25px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
     color: #d12755;
+    text-transform: uppercase;
   }
 }
 @media (min-width: 1200px) {
   .form__os {
     width: 450px;
+    padding-top: 0px;
     order: 0;
+  }
+  .os input {
+    margin-left: 75px;
   }
 }
 .form__user-contacts {
