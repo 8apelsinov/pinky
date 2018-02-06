@@ -143,13 +143,11 @@
     }
    & input[type=radio] {
         display: none;
-    }
-    
+    }  
 }
  
 
-.slider { 
-    
+.slider {
     padding-top: 40px;
     text-align: center;
     height: 12px;
@@ -192,7 +190,7 @@
         
         &__list {
             width: 100%;
-           
+           margin-left: 260px;
         }
        
         &__header {
@@ -239,17 +237,22 @@
                 top: 10px;
                 right: 65px;
                 }
-            }
-            
-            
-        }
-        
-        &__controls {
-            display: none;
-        }
-    }
-    
-    
+            }  
+        } 
+    }  
+    .slider {
+    display: none;
+  }
+
+.rate-plan__toggle--1:checked ~ .rate-plan__list {
+     margin-left: 0px;
+}
+.rate-plan__toggle--2:checked ~ .rate-plan__list {
+     margin-left: 0px;
+}
+.rate-plan__toggle--3:checked ~ .rate-plan__list  {
+      margin-left: 0px;
+}
 }
 @media (min-width: @desktop-width) {
     .rate-plan {

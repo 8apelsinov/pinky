@@ -750,6 +750,7 @@ a {
   }
   .rate-plan__list {
     width: 100%;
+    margin-left: 260px;
   }
   .rate-plan__header {
     width: 150px;
@@ -786,8 +787,17 @@ a {
     top: 10px;
     right: 65px;
   }
-  .rate-plan__controls {
+  .slider {
     display: none;
+  }
+  .rate-plan__toggle--1:checked ~ .rate-plan__list {
+    margin-left: 0px;
+  }
+  .rate-plan__toggle--2:checked ~ .rate-plan__list {
+    margin-left: 0px;
+  }
+  .rate-plan__toggle--3:checked ~ .rate-plan__list {
+    margin-left: 0px;
   }
 }
 @media (min-width: 1200px) {
