@@ -85,23 +85,33 @@
             </section>
             
             <section class="reviews">
-              
+               <input class="reviews__toggle reviews__toggle--1" type="radio" id="switch-1" name="switch" checked>
+               <input class="reviews__toggle reviews__toggle--2" type="radio" id="switch-2" name="switch">
+               <input class="reviews__toggle reviews__toggle--3" type="radio" id="switch-3" name="switch">
                 
-                <div class="reviews__item">
-                   
-                        <p class="reviews__author">Николай Петров
-                        </p>
-                    <span class="reviews__author-info">25 лет, водитель трамвая</span>
+                <div class="reviews__wrapper">
+                   <div class="reviews__slider slide--1">
+                        <p class="reviews__author">Николай Петров</p>
+                        <span class="reviews__author-info">25 лет, водитель трамвая</span>
                         <p class="reviews__blockquote">
-                            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-                        </p>
-                    
+                            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                    </div>
+                    <div class="reviews__slider slide--2">
+                        <p class="reviews__author">Петр Николаев</p>
+                        <span class="reviews__author-info">52 лет, менеджер</span>
+                        <p class="reviews__blockquote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                    </div>
+                    <div class="reviews__slider slide--3">
+                        <p class="reviews__author">Александр</p>
+                        <span class="reviews__author-info">30 лет, продавец</span>
+                        <p class="reviews__blockquote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                    </div>
                 </div>
                 
-                <div class="reviews__controls control">
-                    <div class="control__item control__item--active"></div>
-                    <div class="control__item"></div>
-                    <div class="control__item"></div>
+                <div class="reviews__switch switch">
+                    <label class="switch__label" for="switch-1"></label>
+                    <label class="switch__label" for="switch-2"></label>
+                    <label class="switch__label" for="switch-3"></label>
                 </div>
             </section>
             
