@@ -2,14 +2,14 @@
     .mobile-width();
     background-color: #f2f2f2;
     padding-top: 90px;
-
-    
+     padding-bottom: 47px;
+    overflow: hidden;
+   
     &__list {
         width: 1120px;
         border-collapse: collapse;
          text-transform: uppercase;
-        line-height: 30px;
-        overflow: hidden;
+        line-height: 30px; 
     }
      
     &__header {
@@ -141,8 +141,49 @@
         height: 100px;
         margin: 0 auto;
     }
+   & input[type=radio] {
+        display: none;
+    }
     
 }
+ 
+
+.slider { 
+    
+    padding-top: 40px;
+    text-align: center;
+    height: 12px;
+    
+    &__label {
+        display: inline-block;
+        content: "";
+        width: 6px;
+        height: 6px;
+        background-color: #bec2c7;
+        border-radius: 50%;
+        margin-right: 16px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+}
+/* SLIDER */
+#btn-1:checked ~ .slider .slider__label[for="btn-1"],
+#btn-2:checked ~ .slider .slider__label[for="btn-2"], 
+#btn-3:checked ~ .slider .slider__label[for="btn-3"] {
+        background-color: white;
+        border: 3px solid #273545;   
+}
+.rate-plan__toggle--1:checked ~ .rate-plan__list {
+     margin-left: -260px;
+}
+.rate-plan__toggle--2:checked ~ .rate-plan__list {
+     margin-left: -540px;
+}
+.rate-plan__toggle--3:checked ~ .rate-plan__list  {
+      margin-left: -820px;
+}
+
+
 @media (min-width: @tablet-width) {
     .rate-plan {
         .tablet-width();
@@ -155,7 +196,7 @@
         }
        
         &__header {
-            width: 150px;       //154px with border
+            width: 150px;     
             height: 80px;
             
             font-size: 16px;

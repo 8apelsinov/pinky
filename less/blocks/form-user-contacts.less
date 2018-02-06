@@ -68,13 +68,49 @@
             font-size: 14px;
             line-height: 30px;
             text-transform: uppercase;
+            text-align: center;
       }
+        &__label {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 60px;
+                height: 59px;
+                background-color: #e5e5e5;
+               
+                top: 22px;
+                left: 434px;
+            }
+        }
     }
 }
 
 @media (min-width: @desktop-width) {
     .form__user-contacts {
-       
+       width: 1200px;
+        padding: 0 130px;
         order: 0;
     }
-}
+    .user-contacts {
+        &__fieldset {
+            width: 940px;
+      }
+        &__legend {
+           padding: 0 31px;
+            
+      }
+        &__label {
+            
+           /*&::before {
+                position: absolute;
+                content: "";
+                width: 60px;
+                height: 59px;
+                background-color: #e5e5e5;
+               
+                top: 22px;
+                left: 434px;*/
+            }
+        }
+    }

@@ -106,7 +106,11 @@
             </section>
             
             <section class="rate-plan">
-                <table class="rate-plan__list">
+              <input class="rate-plan__toggle--1" type="radio" id="btn-1" name="toggle">
+              <input class="rate-plan__toggle--2" type="radio" id="btn-2" name="toggle" checked>
+              <input class="rate-plan__toggle--3" type="radio" id="btn-3" name="toggle">
+              <table class="rate-plan__list">
+                  <thead>
                     <tr>
                         <th class="rate-plan__header"></th>
                         <th class="rate-plan__header">
@@ -121,7 +125,9 @@
                             <b class="rate-plan__title">Анлим</b><br>
                             <span class="rate-plan__text">9,99 usd</span>
                         </th>
-                    </tr>
+                      </tr>
+                    </thead>
+                  <tbody>
                     <tr>
                         <td class="rate-plan__set rate-plan__cell">
                             <span class="rate-plan__name rate-plan__name--first-line">Розовый фильтр</span>
@@ -164,12 +170,14 @@
                             <span class="rate-plan__name">Комментарии</span>
                         </td>
                     </tr>
+                  </tbody>
                 </table>
-                 <div class="rate-plan__controls control">
-                    <div class="control__item"></div>
-                    <div class="control__item control__item--active"></div>
-                    <div class="control__item"></div>
-                </div>
+              
+              <div class="slider">
+                <label class="slider__label" for="btn-1"></label>
+                <label class="slider__label" for="btn-2"></label>
+                <label class="slider__label" for="btn-3"></label>
+              </div>
             </section>
             
             <section class="contacts">

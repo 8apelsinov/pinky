@@ -596,13 +596,14 @@ a {
   padding: 0 20px;
   background-color: #f2f2f2;
   padding-top: 90px;
+  padding-bottom: 47px;
+  overflow: hidden;
 }
 .rate-plan__list {
   width: 1120px;
   border-collapse: collapse;
   text-transform: uppercase;
   line-height: 30px;
-  overflow: hidden;
 }
 .rate-plan__header {
   width: 280px;
@@ -705,6 +706,41 @@ a {
 .rate-plan__controls {
   height: 100px;
   margin: 0 auto;
+}
+.rate-plan input[type=radio] {
+  display: none;
+}
+.slider {
+  padding-top: 40px;
+  text-align: center;
+  height: 12px;
+}
+.slider__label {
+  display: inline-block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  margin-right: 16px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+/* SLIDER */
+#btn-1:checked ~ .slider .slider__label[for="btn-1"],
+#btn-2:checked ~ .slider .slider__label[for="btn-2"],
+#btn-3:checked ~ .slider .slider__label[for="btn-3"] {
+  background-color: white;
+  border: 3px solid #273545;
+}
+.rate-plan__toggle--1:checked ~ .rate-plan__list {
+  margin-left: -260px;
+}
+.rate-plan__toggle--2:checked ~ .rate-plan__list {
+  margin-left: -540px;
+}
+.rate-plan__toggle--3:checked ~ .rate-plan__list {
+  margin-left: -820px;
 }
 @media (min-width: 660px) {
   .rate-plan {
@@ -1258,11 +1294,43 @@ a {
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
+    text-align: center;
+  }
+  .user-contacts__label {
+    position: relative;
+  }
+  .user-contacts__label::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 59px;
+    background-color: #e5e5e5;
+    top: 22px;
+    left: 434px;
   }
 }
 @media (min-width: 1200px) {
   .form__user-contacts {
+    width: 1200px;
+    padding: 0 130px;
     order: 0;
+  }
+  .user-contacts__fieldset {
+    width: 940px;
+  }
+  .user-contacts__legend {
+    padding: 0 31px;
+  }
+  .user-contacts__label {
+    /*&::before {
+                position: absolute;
+                content: "";
+                width: 60px;
+                height: 59px;
+                background-color: #e5e5e5;
+               
+                top: 22px;
+                left: 434px;*/
   }
 }
 .form__user-achievements {
