@@ -4,8 +4,7 @@
     padding-bottom: 25px;
     background-color: #f2f2f2;
    color: black;
-    line-height: 30px;
-    
+    line-height: 30px; 
 }
 .achieve {
     
@@ -20,6 +19,12 @@
         margin: auto;
         padding-bottom: 42px;
     }
+    &__fieldset {
+        border: none;
+        }
+    &__legend {
+        display: none;
+    }
     &__input {
         display: none;
     }
@@ -33,6 +38,7 @@
         display: block;
         margin-bottom: 22px;
         padding-left: 71px;
+        cursor: pointer;
           &::before {
             position: absolute;
             content: "";
@@ -41,25 +47,66 @@
             box-sizing: border-box;
             border: 2px solid #e5e5e5;
               background-color: white;
+              border-radius: 3px;
             top: -4px;
             left: 2px;
               
         }
     }
+    &__input + label:hover::before {
+        border-color: black;
+    }
+    &__input + label:active::before {
+        border-color: @pink;
+    }
     &__input:checked + label::after {
         position: absolute;
-        
+        content: "";
+        width: 22px;
+        height: 16px;
+        background-image: url(../icons/tick.png);
+        top: 7px;
+        left: 12px;
     }
 }
 
 @media (min-width: @tablet-width) {
     .form__achieve {
-        height: 620px;
+        width: 660px;
+        background-color: white; 
+    }
+    .achieve {
+        
+        &__title {
+            display: none;
+        }
+        &__fieldset {
+            border: 2px solid #e5e5e5;
+        }
+        &__legend {
+            display: block;
+            color: @pink;
+            padding: 0 25px;
+            font-size: 14px;
+            line-height: 30px;
+            text-transform: uppercase;
+            margin: auto;
+            margin-bottom: 45px;
+      }
+        &__input + label {
+            padding-left: 100px;
+            &::before {
+                left: 30px;
+            }
+        }
+        &__input:checked + label::after {
+            left: 40px;
+        }
     }
 }
 
 @media (min-width: @desktop-width) {
     .form__achieve {
-        height: 295px;
+       
     }
 }
