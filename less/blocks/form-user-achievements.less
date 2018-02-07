@@ -1,19 +1,65 @@
-.form__user-achievements {
-    height: 605px;
-    background-color: burlywood;
+.form__achieve {
+   width: 320px;
+    padding: 40px 20px;
+    padding-bottom: 25px;
+    background-color: #f2f2f2;
+   color: black;
+    line-height: 30px;
     
-    width: 940px;
-    box-sizing: border-box;
+}
+.achieve {
+    
+    &__title {
+        display: block;
+        width: 230px;
+        font-size: 14px;
+        line-height: 18px;
+        color: @pink;
+        text-transform: uppercase;
+        text-align: center;
+        margin: auto;
+        padding-bottom: 42px;
+    }
+    &__input {
+        display: none;
+    }
+    &__label {
+        padding: 0;
+        margin: 0;
+        line-height: 30px;
+    }
+    &__input + label {
+        position: relative;
+        display: block;
+        margin-bottom: 22px;
+        padding-left: 71px;
+          &::before {
+            position: absolute;
+            content: "";
+            width: 39px;
+            height: 39px;
+            box-sizing: border-box;
+            border: 2px solid #e5e5e5;
+              background-color: white;
+            top: -4px;
+            left: 2px;
+              
+        }
+    }
+    &__input:checked + label::after {
+        position: absolute;
+        
+    }
 }
 
 @media (min-width: @tablet-width) {
-    .form__user-achievements {
+    .form__achieve {
         height: 620px;
     }
 }
 
 @media (min-width: @desktop-width) {
-    .form__user-achievements {
+    .form__achieve {
         height: 295px;
     }
 }

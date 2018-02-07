@@ -3,7 +3,8 @@
     padding: 0 20px;
    order: 2;
     background-color: #f2f2f2;
-    padding-top: 22px;
+    padding-top: 24px;
+    padding-bottom: 13px;
     color: black;
 }
 
@@ -30,9 +31,10 @@
            display: block;
             position: relative;
             cursor: pointer;
-            margin-bottom: 55px; 
+            margin-bottom: 21px; 
+            line-height: 30px;
             &:first-of-type {
-                 margin-top: 20px;
+                 margin-top: 19px;
             }
             
             &::before {
@@ -45,7 +47,13 @@
                 border: 2px solid #e5e5e5;
                 background-color: white;
                 left: -70px;
-                top: -6px;
+                top: -4px;
+             /*   &:hover {
+                    border: 2px solid black;
+                }
+                &:active {
+                
+                }*/
             }
         }
         &:checked + label::after {
@@ -55,10 +63,16 @@
             height: 15px;
             border-radius: 50%;
             background-color: @pink;
-            top: 6px;
+            top: 8px;
             left: -58px;
         }
     }    
+}
+.os__input + label:hover::before {
+    border-color: black;
+}
+.os__input + label:active::before {
+    border-color: @pink;
 }
 @media (min-width: @tablet-width) {
     .form__os {
