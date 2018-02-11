@@ -84,16 +84,16 @@
                     
                   <fieldset class="user-contacts__fieldset">
                     <legend class="user-contacts__legend">Контактная информация</legend>
-                      
-                    <div class="user-contacts__wrapper left-side"> 
-                      <label for="phone" class="user-contacts__label">Номер телефона</label><br>
-                      <input type="tel" name="phone" placeholder="Номер, пожалуйста">
-                    </div><br>
-                    
-                    <div class="user-contacts__wrapper right-side">
+                     <div class="user-contacts__big-wrapper">
+                      <div class="user-contacts__wrapper"> 
+                        <label for="phone" class="user-contacts__label">Номер телефона</label><br>
+                        <input type="tel" name="phone" placeholder="Номер, пожалуйста">
+                      </div>
+                      <div class="user-contacts__wrapper">
                         <label for="email" class="user-contacts__label">Адрес почты</label><br>
                         <input type="text" name="email" placeholder="Введите почту *" requied>
-                    </div>
+                      </div>
+                     </div>
                   </fieldset>
                 </section>
             
@@ -101,33 +101,45 @@
                     <div class="achieve__title">Ваши безбашенные достижения в путешествии
                     </div>
                     <fieldset class="achieve__fieldset">
+                     
                       <legend class="achieve__legend">Ваши безбашенные достижения в путешествии</legend>
-                      <input class="achieve__input" type="checkbox" name="selfi" id="selfi" checked>
-                      <label class="achieve__label" for="selfi">Сделал селфи с акулой</label><br>
+                        <div class="achieve__wrapper">
+                        
+                            <input class="achieve__input" type="checkbox" name="selfi" id="selfi" checked>
+                            <label class="achieve__label" for="selfi">Сделал селфи с акулой</label><br>
+                        
+                            <input class="achieve__input" type="checkbox" name="burned" id="burned" checked>
+                            <label class="achieve__label" for="burned">Обгорел на пляже</label><br>
                     
-                      <input class="achieve__input" type="checkbox" name="burned" id="burned" checked>
-                      <label class="achieve__label" for="burned">Обгорел на пляже</label><br>
-                    
-                      <input class="achieve__input" type="checkbox" name="norris" id="norris">
-                      <label class="achieve__label" for="norris">Видел Чака Норриса</label><br>
-                    
-                      <input class="achieve__input" type="checkbox" name="souvenirs" id="souvenirs">
-                      <label class="achieve__label" for="souvenirs">Накупил сувениров</label><br>
-                    
-                      <input class="achieve__input" type="checkbox" name="tower" id="tower" checked>
-                      <label class="achieve__label" for="tower">Удержал башню</label><br>
-                    
-                      <input class="achieve__input" type="checkbox" name="crushedhotel" id="crushedhotel">
-                      <label class="achieve__label" for="crushedhotel">Разгромил отель</label>
+                            <input class="achieve__input" type="checkbox" name="norris" id="norris">
+                            <label class="achieve__label" for="norris">Видел Чака Норриса</label><br>
+                     
+                            <input class="achieve__input" type="checkbox" name="souvenirs" id="souvenirs">
+                            <label class="achieve__label" for="souvenirs">Накупил сувениров</label><br>
+                     
+                            <input class="achieve__input" type="checkbox" name="tower" id="tower" checked>
+                            <label class="achieve__label" for="tower">Удержал башню</label><br>
+                     
+                            <input class="achieve__input" type="checkbox" name="crushedhotel" id="crushedhotel">
+                            <label class="achieve__label" for="crushedhotel">Разгромил отель</label>
+                        
+                         </div>
                     </fieldset>
                 </section>
               
-                <section class="form__emotions">
+                <section class="form__emotions emotions">
+                    <div class="emotions__title">Опишите свои эмоции</div>
+                    <fieldset class="emotions__fieldset">
+                        <legend class="emotions__legend">Опишите свои эмоции</legend>
+                        <textarea class="emotions__text" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
+                    </fieldset>
                     
                 </section>
               </div>
                 <div class="form__footer">
-                    <div class="form__btn">btn</div>
+                    <div class="form__submit submit">
+                        <input type="submit" class="submit__btn" value="Отправить форму">
+                    </div>
                     <div class="form__requied">form-requied</div>
                 </div>
               </form>
