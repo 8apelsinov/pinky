@@ -3,6 +3,7 @@ body {
   font-size: 18px;
   color: white;
   font-family: 'Open Sans', 'Verdana', sans-serif;
+  color: black;
 }
 li,
 ul {
@@ -202,6 +203,7 @@ a {
 .intro {
   width: 320px;
   height: 237px;
+  color: white;
   background: url("../img/bg-back-mobile@1x.jpg") center 0px no-repeat;
   margin-top: -75px;
   display: flex;
@@ -293,11 +295,9 @@ a {
 @media (min-width: 660px) {
   .intro {
     width: 660px;
-    height: 440px;
+    height: 470px;
     background: url("../img/bg-back-tablet@1x.jpg") center 0px no-repeat;
     background-size: auto, cover;
-    align-items: flex-end;
-    justify-content: flex-start;
     margin-top: -118px;
   }
   .intro__main-page {
@@ -305,8 +305,10 @@ a {
     background: url("../img/iphone-hand-tablet@1x.png") center 190px no-repeat, url("../img/bg-back-tablet@1x.jpg") center 0px no-repeat;
   }
   .intro__wrapper {
+    height: 330px;
     width: 100%;
     text-align: center;
+    outline: 1px solid red;
   }
   .intro__wrapper--main-page {
     width: 300px;
@@ -317,11 +319,11 @@ a {
     padding-bottom: 65px;
   }
   .intro__slogan {
+    outline: 1px solid yellow;
     display: block;
     font-size: 50px;
     line-height: 70px;
     text-align: center;
-    margin-bottom: 58px;
   }
   .intro__slogan--main-page {
     font-size: 40px;
@@ -1723,29 +1725,111 @@ a {
     text-align: right;
   }
 }
-.photos__text {
+.photos__wrapper {
   display: block;
   padding: 50px 20px;
+  box-sizing: border-box;
   color: black;
   font-size: 14px;
   line-height: 30px;
+}
+.photos__text {
   text-align: center;
-  width: ;
+  margin: 0;
+}
+.photos__text--block {
+  display: block;
+  text-align: center;
+  margin: 0;
 }
 @media (min-width: 660px) {
+  .photos__wrapper {
+    font-size: 18px;
+    width: 660px;
+    text-align: center;
+    padding: 0 85px;
+    padding-top: 95px;
+    padding-bottom: 75px;
+    box-sizing: border-box;
+  }
   .photos__text {
-    height: 230px;
+    width: 480px;
+    display: inline;
+    margin: 0 auto;
+  }
+  .photos__text--block {
+    display: inline;
+    text-align: center;
   }
 }
 @media (min-width: 940px) {
+  .photos__wrapper {
+    width: 1200px;
+    padding: 0 130px;
+    padding-top: 80px;
+    padding-bottom: 85px;
+    box-sizing: border-box;
+  }
   .photos__text {
-    height: 240px;
+    width: 680px;
+    display: block;
+  }
+  .photos__text--block {
+    display: block;
   }
 }
-.photos__main-photo {
+.main-photo {
+  position: relative;
+}
+.main-photo::after {
+  position: absolute;
+  content: "панорама дня";
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  padding-top: 7px;
+  box-sizing: border-box;
+  width: 140px;
+  height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #d12755;
+  top: 0;
+  right: 20px;
+  z-index: 10;
+}
+.main-photo__item {
   width: 320px;
-  height: 330px;
-  background-color: forestgreen;
+  height: 137px;
+}
+.main-photo__wrapper {
+  width: 280px;
+  margin: 0 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f2f2f2;
+}
+.comments {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0 15px;
+}
+.comments__author {
+  font-weight: 700;
+}
+.comments__time {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.comments__likes {
+  display: block;
+  margin-top: 15px;
+  color: #d12755;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-left: 30px;
 }
 @media (min-width: 660px) {
   .photos__main-photo {

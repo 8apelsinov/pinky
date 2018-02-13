@@ -1,7 +1,7 @@
 .intro {
     width: 320px;
     height: 237px;
-    
+    color: white;
     background: url("../img/bg-back-mobile@1x.jpg") center 0px no-repeat;
     margin-top: -75px; 
      
@@ -111,13 +111,13 @@
 @media (min-width: @tablet-width) {
     .intro {
         width: 660px;
-        height: 440px;
+        height: 470px;
        background: url("../img/bg-back-tablet@1x.jpg") center 0px no-repeat;
         background-size: auto, cover;
         
                
-        align-items: flex-end;
-        justify-content: flex-start;
+     //   align-items: flex-end;
+    //    justify-content: flex-start;
         
         margin-top: -118px;
         
@@ -128,8 +128,10 @@
         }
         
         &__wrapper {
+              height: 330px;
             width: 100%;
             text-align: center;
+            outline: 1px solid red;
             &--main-page {
                 width: 300px;
                 height: 500px;
@@ -142,11 +144,12 @@
         }
         
         &__slogan {
+            outline: 1px solid yellow;
             display: block;
             font-size: 50px;
             line-height: 70px;
             text-align: center;
-            margin-bottom: 58px;
+         //   margin-bottom: 58px;
             &--main-page {
                 
             font-size: 40px;

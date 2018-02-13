@@ -1,7 +1,61 @@
-.photos__main-photo {
-    width: 320px;
-    height: 330px;
-    background-color: forestgreen;
+
+.main-photo {
+     position: relative;
+        &::after {
+            position: absolute;
+            content: "панорама дня";
+            color: white;
+            text-transform: uppercase;
+            text-transform: uppercase;
+            font-size: 12px;
+            line-height: 24px;
+            font-weight: 700;
+            padding-top: 7px;
+            box-sizing: border-box;
+                
+            width: 140px;
+            height: 36px;
+            text-align: center;
+            vertical-align: middle;
+            background-color: @pink;
+            
+            top: 0;
+            right: 20px;
+            z-index: 10;
+        }
+    &__item {
+        width: 320px;
+        height: 137px;
+       
+    }
+    &__wrapper {
+         width: 280px;
+        margin: 0 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #f2f2f2;
+        
+    }
+}
+.comments {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 15px;
+    &__author {
+        font-weight: 700;
+    }
+    &__time {
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    &__likes {
+        display: block;
+        margin-top: 15px;
+        color: @pink;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding-left: 30px;
+    }
 }
 @media (min-width: @tablet-width) {
     .photos__main-photo {
