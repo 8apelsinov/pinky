@@ -4,21 +4,49 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width", initial-scale="1">
         <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
         <title>Pink</title>
     </head>
     <body>
-        <header class="page-header">
-            <section class="main-nav">main-nav
+         <header class="page-header">
+            <div class="page-header__wrapper">
+              <a class="page-header__logo">
+                <img src="icons/logotype-WHITE-mobile.png" width="75" height="22" alt="Приложение Pink">
+              </a>
+              <nav class="main-nav main-nav--closed">  
                 
-            </section>
+                  <button class="main-nav__toggle" type="button"><h2 class="visually-hidden">Открыть меню</h2></button>
+                  
+                  <div class="main-nav__wrapper">
+                      <ul class="main-nav__list site-list">
+                        <li class="site-list__item site-list__item--active">
+                            <a class="site-list__link">Главная</a>
+                          </li>
+                          <li class="site-list__item">
+                            <a class="site-list__link" href="photo.html">Фоторафии</a>
+                          </li>
+                          <li class="site-list__item">
+                            <a class="site-list__link"    href="form.html">Конкурс</a>
+                          </li>
+                          <li class="site-list__item">
+                              <a class="site-list__link" href="#">HTML Academy</a>
+                        </li>
+                    </ul>
+                  </div>
+              </nav>
+            </div> 
             
-            <b class="page-header-intro">page-header-intro
-            </b>
+            <section class="intro">
+              <div class="intro__wrapper">
+                <p class="intro__slogan">Фотографии пользователей</p>
+                
+              </div>  
+            </section>
         </header>
         
         <main class="photos">
             <div class="photos__wrapper">
-                <div class="photos__text">some-text</div>
+                <div class="photos__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</div>
                 <div class="photos__main-photo">photos__main-photo</div>
                 
               <section class="photos__users-photos">

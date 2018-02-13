@@ -1,12 +1,16 @@
 .form__footer {
+   
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 45px;
 }
 
 .submit {
     &__btn {
         width: 100%;
-        height: 90px;
+        height: 60px;
         background-color: #2aab6c;
         font-weight: 700;
         text-align: center;
@@ -16,6 +20,7 @@
         text-transform: uppercase;
         outline: none;
         border: none;
+        border-radius: 3px;
         &:hover {
             background-color: #1b9b5d;
         }
@@ -32,15 +37,41 @@
 @media (min-width: @tablet-width) {
     .form__footer {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
+        margin-bottom: 85px;
     }
-    .form__submit {
-        
+    .submit {
+        &__btn {
+            width: 300px;
+            height: 65px;
+        }
     }
 }
 
 @media (min-width: @desktop-width) {
-    .form__submit {
-       
+    .form__footer {
+        box-sizing: border-box;
+        width: 1200px;
+     padding: 0 130px;
+    }
+}
+
+.requied {
+    color: black;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    &__text {
+        &--pink {
+            color: @pink;
+        }
+    }
+}
+@media (min-width: @tablet-width) {
+    .requied {
+        width: 300px;
+        height: 65px;
+        text-align: right;
     }
 }

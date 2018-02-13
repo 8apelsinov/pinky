@@ -212,7 +212,10 @@ a {
   background: url("../img/iphone-hand-mobile@1x.png") left 180px no-repeat, url("../img/bg-back-mobile@1x.jpg") center 0px no-repeat;
 }
 .intro__wrapper {
+  height: 140px;
   padding: 0 20px;
+  display: flex;
+  align-items: flex-start;
 }
 .intro__wrapper--main-page {
   width: 320px;
@@ -227,7 +230,7 @@ a {
   line-height: 30px;
   font-weight: 300;
   text-align: center;
-  margin-bottom: 52px;
+  margin-top: 0;
 }
 .intro__slogan--main-page {
   display: none;
@@ -973,6 +976,48 @@ a {
 .footer {
   color: black;
 }
+.footer__wrapper {
+  height: 205px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.footer__logo {
+  width: 150px;
+  height: 40px;
+}
+.footer__social {
+  width: 280px;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.social__item {
+  display: block;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  border: 3px solid #e9eaec;
+  margin-right: 12px;
+  box-sizing: border-box;
+}
+.social__item:hover {
+  border-color: black;
+  transition: .5s;
+}
+.social__item:active {
+  border-color: #e9eaec;
+  opacity: .3;
+}
+.copyrights__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: #283645;
+}
 .footer--none {
   display: none;
 }
@@ -981,58 +1026,23 @@ a {
     width: 620px;
     padding: 0 20px;
     display: block;
-    margin-bottom: 37px;
   }
   .footer__wrapper {
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .footer__logo {
-    width: 150px;
-    height: 40px;
-  }
-  .footer__social {
-    width: 290px;
+    height: 55px;
   }
   .footer__copyrights {
     width: 130px;
     height: 35px;
-  }
-  .social {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .social__item {
-    display: block;
-    width: 51px;
-    height: 51px;
-    border-radius: 50%;
-    border: 3px solid #e9eaec;
-    margin-right: 12px;
-    box-sizing: border-box;
-  }
-  .social__item:hover {
-    border-color: black;
-    transition: .5s;
-  }
-  .social__item:active {
-    border-color: #e9eaec;
-    opacity: .3;
-  }
-  .copyrights__text {
-    font-size: 14px;
-    line-height: 18px;
-    color: #283645;
   }
 }
 @media (min-width: 940px) {
   .footer {
     display: block;
     width: 1200px;
+    padding: 0 130px;
     margin-bottom: 70px;
+    box-sizing: border-box;
   }
   .copyrights__text {
     font-size: 18px;
@@ -1054,7 +1064,6 @@ a {
 }
 .form__wrapper {
   width: 320px;
-  outline: 1px solid darkblue;
 }
 @media (min-width: 660px) {
   .form__wrapper {
@@ -1400,6 +1409,7 @@ a {
     width: 1200px;
     padding: 0 130px;
     order: 0;
+    margin-bottom: 55px;
   }
   .user-contacts input {
     width: 375px;
@@ -1650,10 +1660,13 @@ a {
 .form__footer {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 45px;
 }
 .submit__btn {
   width: 100%;
-  height: 90px;
+  height: 60px;
   background-color: #2aab6c;
   font-weight: 700;
   text-align: center;
@@ -1663,6 +1676,7 @@ a {
   text-transform: uppercase;
   outline: none;
   border: none;
+  border-radius: 3px;
 }
 .submit__btn:hover {
   background-color: #1b9b5d;
@@ -1677,16 +1691,46 @@ a {
 @media (min-width: 660px) {
   .form__footer {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 85px;
+  }
+  .submit__btn {
+    width: 300px;
+    height: 65px;
   }
 }
-.form__requied {
-  height: 90px;
-  background-color: crimson;
+@media (min-width: 940px) {
+  .form__footer {
+    box-sizing: border-box;
+    width: 1200px;
+    padding: 0 130px;
+  }
+}
+.requied {
+  color: black;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.requied__text--pink {
+  color: #d12755;
+}
+@media (min-width: 660px) {
+  .requied {
+    width: 300px;
+    height: 65px;
+    text-align: right;
+  }
 }
 .photos__text {
-  height: 185px;
-  background-color: cyan;
+  display: block;
+  padding: 50px 20px;
+  color: black;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  width: ;
 }
 @media (min-width: 660px) {
   .photos__text {

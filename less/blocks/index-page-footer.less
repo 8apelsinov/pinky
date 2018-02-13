@@ -1,40 +1,22 @@
 .footer {
     color: black;
-    
-}
-.footer--none {
-    display: none;
-}
-@media (min-width: @tablet-width) {
-    .footer {
-        .tablet-width();
-         padding: 0 20px;
-        display: block;
-        margin-bottom: 37px;
-        
-        &__wrapper {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        &__logo {
-            width: 150px;
-            height: 40px;
-        }
-       
-        &__social {
-             width: 290px;
-           
-        }
-        &__copyrights {
-            width: 130px;
-            height: 35px;
-        }
+    &__wrapper {
+        height: 205px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; 
+        margin-bottom: 40px;
     }
-    
-    .social {
+    &__logo {
+            width: 150px;
+            height: 40px;     
+}
+    &__social {
+             width: 280px; 
+        }
+} 
+.social {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -53,23 +35,43 @@
             &:active {
                 border-color: #e9eaec;
                 opacity: .3;
-            }
-            
+            }  
         }
     }
-    .copyrights {
+.copyrights {
         &__text {
             font-size: 14px;
             line-height: 18px;
             color: #283645;
         }
     }
+.footer--none {
+    display: none;
+}
+@media (min-width: @tablet-width) {
+    .footer {
+        .tablet-width();
+         padding: 0 20px;
+        display: block;
+        
+        &__wrapper {
+            flex-direction: row;
+            height:55px;
+         }
+        
+        &__copyrights {
+            width: 130px;
+            height: 35px;
+        }
+    }    
 }
 @media (min-width: @desktop-width) {
     .footer {
         display: block;
         .desktop-width();
+        padding: 0 130px;
         margin-bottom: 70px;
+        box-sizing: border-box;
     }
     .copyrights {
         &__text {
