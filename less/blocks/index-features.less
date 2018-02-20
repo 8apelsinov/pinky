@@ -1,46 +1,35 @@
 .features {
-    outline: 1px dashed rgba(212,88,131,0.5);
-    
     text-align: center;
-    
+     background-color: white;
     width: 320px;
     color: black;
     margin-top: 35px;
-    position: relative;
-     &::before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 50%;
-            background-color: #f2f2f2;
-            z-index: -1;
-            top: 180px;
-            right: 0px;
-            transform-origin: right bottom;
-            transform: skewY(-5deg);   
-        }
+    margin-bottom: 30px;
+   background-image: ;
+    background-repeat: no-repeat;
+    background-position: top;
     
     &__wrapper  {
-      background-color: #f2f2f2;  
+        background-color: #f2f2f2;  
         padding: 0 20px;
         position: relative;
-         margin-top: 110px;
+        padding-top: 110px;
         
         height: 700px;
     
         
-        background-image: url("../img/iphone-screen-mobile@1x.png");
+        background-image: url("../img/iphone-screen-mobile@1x.png"),
+            url("../img/bg-triangle-white.svg");
         background-repeat: no-repeat;
-        background-position: center bottom -45px;
+        background-position: center bottom -45px, top;
     }
     
     &__text {
         font-size: 24px;
         line-height: 30px;
         font-weight: 300;
-       
-        outline: 1px dashed green;
-    }
+       margin-top: 0;
+  }
     &__title {
         font-size: 18px;
         line-height: 24px;
@@ -60,7 +49,8 @@
 @media (min-width: @tablet-width) {
     .features {
         width: 660px;
-        
+         background-color: forestgreen;
+    
         margin-top: 57px;
         
         &__text {
@@ -86,6 +76,7 @@
             flex-direction: column;
             align-items: flex-end;
             justify-content: space-around;
+            margin-bottom: 60px;
         }
         
         &__list {
@@ -94,15 +85,40 @@
             
             outline: 1px solid blue;
         }
-        
+      
         &__effect {
         display: block;
         background-color: white;
-        
+        display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        &__svg {
+            position: relative;
+           
+            &::before {
+                position: absolute;
+                content: "24";
+                font-size: 100px;
+                color: @pink;
+                font-weight: 700;
+                
+                top: 80px;
+                left: 60px;
+            }
+        }
+        &__content {
+            text-align: left;
+            width: 300px;
         }
         &__title--big {
             font-size: 30px;
             line-height: 36px;
+        }
+        &__link {
+            font-size: 14px;
+            color: @pink;
+            text-decoration: underline;
         }
     }
 }

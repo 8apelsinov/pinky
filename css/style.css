@@ -405,40 +405,31 @@ a {
   }
 }
 .features {
-  outline: 1px dashed rgba(212, 88, 131, 0.5);
   text-align: center;
+  background-color: white;
   width: 320px;
   color: black;
   margin-top: 35px;
-  position: relative;
-}
-.features::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 50%;
-  background-color: #f2f2f2;
-  z-index: -1;
-  top: 180px;
-  right: 0px;
-  transform-origin: right bottom;
-  transform: skewY(-5deg);
+  margin-bottom: 30px;
+  background-image: ;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 .features__wrapper {
   background-color: #f2f2f2;
   padding: 0 20px;
   position: relative;
-  margin-top: 110px;
+  padding-top: 110px;
   height: 700px;
-  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-image: url("../img/iphone-screen-mobile@1x.png"), url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  background-position: center bottom -45px;
+  background-position: center bottom -45px, top;
 }
 .features__text {
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
-  outline: 1px dashed green;
+  margin-top: 0;
 }
 .features__title {
   font-size: 18px;
@@ -456,6 +447,7 @@ a {
 @media (min-width: 660px) {
   .features {
     width: 660px;
+    background-color: forestgreen;
     margin-top: 57px;
   }
   .features__text {
@@ -480,6 +472,7 @@ a {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
+    margin-bottom: 60px;
   }
   .features__list {
     width: 310px;
@@ -489,10 +482,34 @@ a {
   .features__effect {
     display: block;
     background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .features__svg {
+    position: relative;
+  }
+  .features__svg::before {
+    position: absolute;
+    content: "24";
+    font-size: 100px;
+    color: #d12755;
+    font-weight: 700;
+    top: 80px;
+    left: 60px;
+  }
+  .features__content {
+    text-align: left;
+    width: 300px;
   }
   .features__title--big {
     font-size: 30px;
     line-height: 36px;
+  }
+  .features__link {
+    font-size: 14px;
+    color: #d12755;
+    text-decoration: underline;
   }
 }
 @media (min-width: 940px) {
@@ -554,6 +571,7 @@ a {
 }
 .reviews {
   width: 320px;
+  margin-bottom: 40px;
 }
 .reviews__author {
   font-size: 18px;
@@ -681,6 +699,9 @@ a {
   padding-top: 90px;
   padding-bottom: 47px;
   overflow: hidden;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 0px -70px;
 }
 .rate-plan__list {
   width: 1120px;
