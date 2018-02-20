@@ -48,10 +48,18 @@ a {
   box-sizing: border-box;
   border-bottom: 1px solid black;
   padding-left: 20px;
+  fill: #ffffff;
 }
-.page-header__logo img {
-  width: 75px;
-  height: 22px;
+.page-header__logo:hover {
+  fill: #d12755;
+}
+.page-header__logo:active {
+  fill: #ffffff;
+  opacity: .3;
+}
+.page-header__logo-tablet,
+.page-header__logo-desktop {
+  display: none;
 }
 @media (min-width: 660px) {
   .page-header {
@@ -64,9 +72,11 @@ a {
     padding-top: 27px;
     padding-bottom: 43px;
   }
-  .page-header__logo img {
-    width: 147px;
-    height: 40px;
+  .page-header__logo-mobile {
+    display: none;
+  }
+  .page-header__logo-tablet {
+    display: block;
   }
 }
 @media (min-width: 940px) {
@@ -83,6 +93,12 @@ a {
     background-color: transparent;
     border: none;
     padding-left: 130px;
+  }
+  .page-header__logo-tablet {
+    display: none;
+  }
+  .page-header__logo-desktop {
+    display: block;
   }
 }
 .main-nav {
@@ -311,7 +327,6 @@ a {
     height: 330px;
     width: 100%;
     text-align: center;
-    outline: 1px solid red;
   }
   .intro__wrapper--main-page {
     width: 300px;
@@ -322,7 +337,6 @@ a {
     padding-bottom: 65px;
   }
   .intro__slogan {
-    outline: 1px solid yellow;
     display: block;
     font-size: 50px;
     line-height: 70px;
@@ -663,7 +677,6 @@ a {
 }
 .rate-plan {
   width: 320px;
-  padding: 0 20px;
   background-color: #f2f2f2;
   padding-top: 90px;
   padding-bottom: 47px;
@@ -676,13 +689,14 @@ a {
   line-height: 30px;
 }
 .rate-plan__header {
-  width: 280px;
+  width: 278px;
   background-color: #273545;
   border-right: 2px solid #e5e5e5;
   overflow: hidden;
   border-radius: 3px;
   font-size: 18px;
   font-weight: bold;
+  padding: 18px 0;
 }
 .rate-plan__header:first-child {
   background-color: #f2f2f2;
@@ -698,7 +712,7 @@ a {
   text-transform: uppercase;
 }
 .rate-plan__cell {
-  width: 280px;
+  width: 278px;
   height: 60px;
   box-sizing: border-box;
   border: 2px solid #e5e5e5;
@@ -740,7 +754,7 @@ a {
   position: absolute;
   content: "";
   top: 10px;
-  right: 30px;
+  right: 28px;
   width: 4px;
   height: 36px;
   transform: rotate(45deg);
@@ -751,7 +765,7 @@ a {
   position: absolute;
   content: "";
   top: 10px;
-  right: 30px;
+  right: 28px;
   width: 4px;
   height: 36px;
   transform: rotate(-45deg);
