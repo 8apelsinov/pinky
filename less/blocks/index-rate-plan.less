@@ -28,8 +28,41 @@
         &:last-child {
             border-right: none;
         }
+        &--hit {
+            position: relative;
+             &::before {
+                 position: absolute;
+                 content: "";
+                 top: 0px;
+                 left: -55px;
+                 
+                   border-bottom: 28px solid @pink;
+	               border-left: 50px solid transparent;
+	               border-right: 50px solid transparent;
+	               height: 0;
+                   width: 80px;
+                   transform: rotate(-45deg);
+            }
+            &::after {
+                position: absolute;
+                content: "хит";
+                font-weight: 400;
+                color: white;
+                 font-size: 14px;
+                text-transform: uppercase;
+                transform: rotate(-45deg);
+                top: 10px;
+                left: 10px;
+            }
+        }
     }
-     
+     &__title {
+        color: white;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
     &__text {
         font-size: 24px;
         line-height: 30px;
@@ -116,17 +149,7 @@
         border-top: none;
     }
     
-    &__title {
-        color: white;
-        font-size: 18px;
-        line-height: 30px;
-        font-weight: 700;
-        text-transform: uppercase;
-        
-        &--hit {
-            
-        }
-    }
+   
    
     
     &__name {
@@ -196,8 +219,22 @@
         &__header {
             width: 150px;     
             height: 80px;
-            
+            padding: 0;
             font-size: 16px;
+            &--hit {
+                &::before {
+                   border-bottom: 23px solid @pink;
+	               border-left: 50px solid transparent;
+	               border-right: 50px solid transparent;
+	               height: 0;
+                   width: 50px;
+                   transform: rotate(-45deg);
+            }
+                  &::after {      
+                    top: 2px;
+                    left: 2px;
+            }
+        }
         }
         &__text {
             font-size: 18px;
@@ -262,16 +299,14 @@
         
         &__list {
             width: 100%;
-            height: 280px;
-            
+            height: 280px; 
         }
         
         &__header {
             width: 232px;
             height: 98px;
-            
-            font-size: 18px;
-            
+            font-size: 18px; 
+              
         }
         
         &__text {

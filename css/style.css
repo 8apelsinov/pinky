@@ -704,6 +704,39 @@ a {
 .rate-plan__header:last-child {
   border-right: none;
 }
+.rate-plan__header--hit {
+  position: relative;
+}
+.rate-plan__header--hit::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: -55px;
+  border-bottom: 28px solid #d12755;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 80px;
+  transform: rotate(-45deg);
+}
+.rate-plan__header--hit::after {
+  position: absolute;
+  content: "хит";
+  font-weight: 400;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+  top: 10px;
+  left: 10px;
+}
+.rate-plan__title {
+  color: white;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 .rate-plan__text {
   font-size: 24px;
   line-height: 30px;
@@ -775,13 +808,6 @@ a {
 .rate-plan__first-line {
   border-top: none;
 }
-.rate-plan__title {
-  color: white;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
 .rate-plan__name {
   font-size: 14px;
   line-height: 30px;
@@ -839,7 +865,20 @@ a {
   .rate-plan__header {
     width: 150px;
     height: 80px;
+    padding: 0;
     font-size: 16px;
+  }
+  .rate-plan__header--hit::before {
+    border-bottom: 23px solid #d12755;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 50px;
+    transform: rotate(-45deg);
+  }
+  .rate-plan__header--hit::after {
+    top: 2px;
+    left: 2px;
   }
   .rate-plan__text {
     font-size: 18px;
