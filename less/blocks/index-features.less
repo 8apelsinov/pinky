@@ -43,8 +43,7 @@
 @media (min-width: @tablet-width) {
     .features {
         width: 660px;
-        background-color: forestgreen;
-        margin-top: 57px;
+       margin-top: 57px;
         
         &__text {
             display: block;
@@ -122,31 +121,28 @@
 @media (min-width: @desktop-width) {
     .features {
         width: 1200px;
-        &::before {
-            height: 60%;
-            top: 325px;
-        }
-        
         &__text {
             font-size: 50px;
             line-height: 60px;  
             &--diff {
                 width: 430px;
-                margin-bottom: 240px;
+                margin-bottom: 70px;
             }
         }
         
         &__wrapper {
-            width: 1200px;
+           width: 1200px;
             padding: 0 160px;       //идеально по ширине по ПП
+            padding-top: 78px;
             box-sizing: border-box;
-            
+            background-image: url("../img/bg-triangle-white.svg");
+            background-repeat: no-repeat;
+            background-position: 0 0px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            
-           background-image: none;
+            margin-bottom: 0;
         }
         
         &__list {
@@ -167,6 +163,7 @@
             } 
            &:last-child {
                 background-image: url("../img/iphone-screen-3-desktop@1x.png");
+               margin-bottom: 20px;
             }
         }
         
@@ -181,6 +178,13 @@
         }
         &__effect {
             background: #f2f2f2;
+            padding: 110px 130px;
+            padding-bottom: 65px;
+            justify-content: center;
+        }
+        &__content {
+            width: 560px;
+            margin-left: 70px;
         }
     }
 }
