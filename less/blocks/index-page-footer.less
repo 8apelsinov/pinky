@@ -53,7 +53,8 @@
         .tablet-width();
          padding: 0 20px;
         display: block;
-        
+        height: 500px;
+        background-color: black;
         &__wrapper {
             flex-direction: row;
             height:55px;
@@ -63,7 +64,11 @@
             width: 130px;
             height: 35px;
         }
-    }    
+        &--none {
+            display: block;
+        }
+    } 
+    
 }
 @media (min-width: @desktop-width) {
     .footer {

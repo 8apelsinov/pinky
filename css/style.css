@@ -411,9 +411,6 @@ a {
   color: black;
   margin-top: 35px;
   margin-bottom: 30px;
-  background-image: ;
-  background-repeat: no-repeat;
-  background-position: top;
 }
 .features__wrapper {
   background-color: #f2f2f2;
@@ -465,19 +462,23 @@ a {
   }
   .features__wrapper {
     height: 500px;
-    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-image: url("../img/iphone-screen-3-tablet@1x.png"), url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
-    background-position: left 20px bottom;
+    background-position: left 20px bottom, top;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: flex-end;
     margin-bottom: 60px;
+    padding-top: 0;
   }
   .features__list {
     width: 310px;
     text-align: left;
-    outline: 1px solid blue;
+    margin-bottom: 20px;
+  }
+  .features__list:last-child {
+    margin-bottom: 10px;
   }
   .features__effect {
     display: block;
@@ -875,6 +876,7 @@ a {
 }
 @media (min-width: 660px) {
   .rate-plan {
+    background-position: 0px -42px;
     width: 620px;
     padding-bottom: 55px;
     padding-top: 88px;
@@ -988,18 +990,17 @@ a {
 .contacts {
   width: 280px;
   color: black;
+  position: relative;
 }
 .contacts__title {
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
   text-align: center;
-  outline: 1px dashed yellowgreen;
 }
 .contacts__wrapper {
   display: flex;
   flex-direction: column;
-  outline: 1px dashed yellowgreen;
 }
 .contacts__item {
   text-align: center;
@@ -1015,6 +1016,13 @@ a {
   line-height: 34px;
   font-weight: 300;
   color: #d12755;
+}
+.contacts__map-container {
+  background-image: url("bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  position: absolute;
+  z-index: 10;
 }
 @media (min-width: 660px) {
   .contacts {
@@ -1124,6 +1132,8 @@ a {
     width: 620px;
     padding: 0 20px;
     display: block;
+    height: 500px;
+    background-color: black;
   }
   .footer__wrapper {
     flex-direction: row;
@@ -1132,6 +1142,9 @@ a {
   .footer__copyrights {
     width: 130px;
     height: 35px;
+  }
+  .footer--none {
+    display: block;
   }
 }
 @media (min-width: 940px) {
