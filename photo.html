@@ -10,8 +10,17 @@
     <body>
          <header class="page-header">
             <div class="page-header__wrapper">
-              <a class="page-header__logo">
-                <img src="icons/logotype-WHITE-mobile.png" width="75" height="22" alt="Приложение Pink">
+              <a class="page-header__logo" href="index.html">
+                <svg class="page-header__logo-mobile" width="74.426" height="22.859">
+                    <use xlink:href="sprite.svg#logo-pink-white-mobile"></use>
+                </svg>
+                <svg class="page-header__logo-tablet"  width="146.3" height="40.375">
+                    <use xlink:href="sprite.svg#logo-pink-white-tablet"></use>
+                </svg>
+                  <svg class="page-header__logo-desktop" width="146.3" height="40.375">
+                    <use xlink:href="sprite.svg#logo-pink-white-desktop"></use>
+                </svg>
+                
               </a>
               <nav class="main-nav main-nav--closed">  
                 
@@ -146,8 +155,28 @@
         
         </main>
                 
-        <footer class="page-footer">page-footer
-            
+        <footer class="footer">
+                 <div class="footer__wrapper">
+                <a class="footer__logo" href="index.html">
+                    <svg class="footer__logo--mobile" width="146.3" height="40.375">
+                        <use xlink:href="sprite.svg#logo-pink-blue-mobile"></use>
+                    </svg>
+                    <svg class="footer__logo--desktop" width="146.3" height="40.375">
+                        <use xlink:href="sprite.svg#logo-pink-blue-desktop"></use>
+                    </svg>
+                </a>
+                
+                <div class="footer__social social">
+                    <h2 class="visually-hidden">Ищите нас в соц.сетях:</h2>
+                    <a class="social__item social__twitter" href="#"><span class="visually-hidden">Twitter</span></a>
+                    <a class="social__item social__fb" href="#"><span class="visually-hidden">facebook</span></a>
+                    <a class="social__item social__youtube" href="#"><span class="visually-hidden">youtube</span></a>
+                </div>
+                <div class="footer__copyrights copyrights">
+                    <span class="copyrights__text">Разработано</span>
+                    <a class="copyrights__link" href="#"></a>
+                </div>
+            </div>
         </footer>
     </body>
 </html>

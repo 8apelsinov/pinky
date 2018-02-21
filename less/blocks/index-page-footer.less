@@ -1,7 +1,7 @@
-.footer {
-    color: black;
+ .footer {
+     outline: 1px dashed green;
+     height: 205px;
     &__wrapper {
-        height: 205px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -10,10 +10,21 @@
     }
     &__logo {
             width: 150px;
-            height: 40px;     
+            height: 40px;
+        &--desktop {
+            display: none;
+        }
+        &:hover {
+            fill: @pink;
+        }
+        &:active {
+            fill: black;
+            opacity: 0.3;
+        }
 }
     &__social {
-             width: 280px; 
+            
+            width: 280px; 
         }
 } 
 .social {
@@ -50,11 +61,11 @@
 }
 @media (min-width: @tablet-width) {
     .footer {
+        height: 85px;
         .tablet-width();
          padding: 0 20px;
         display: block;
-        height: 500px;
-        background-color: black;
+               
         &__wrapper {
             flex-direction: row;
             height:55px;
@@ -72,11 +83,20 @@
 }
 @media (min-width: @desktop-width) {
     .footer {
+        height: 125px;
         display: block;
         .desktop-width();
         padding: 0 130px;
         margin-bottom: 70px;
         box-sizing: border-box;
+        &__logo {
+            &--mobile {
+                display: none;
+            }
+            &--desktop {
+                display: block;
+            }
+        }
     }
     .copyrights {
         &__text {
